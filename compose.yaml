@@ -1,0 +1,10 @@
+services:
+  web:
+    build: ./web
+    ports:
+      - 8080:80
+  db:
+    image: postgres:16.2
+    environment:
+      POSTGRES_USER: web
+      POSTGRES_PASSWORD: changeme

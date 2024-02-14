@@ -1,0 +1,11 @@
+FROM node
+
+ENV PORT 80
+ENV WORKDIR /tmp/web
+EXPOSE ${PORT}
+
+COPY . ${WORKDIR}
+WORKDIR ${WORKDIR}
+RUN npm run build
+
+CMD npm run start
