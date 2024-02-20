@@ -38,8 +38,12 @@ Para este proyecto hemos usado GitHub que es una herramienta muy adecuada para l
 ![image](https://github.com/xinyuchen602/Gestion-de-tecnologias-informaticas-en-las-organizaciones/assets/83186292/3fbba2ae-0a5d-48b3-858e-16dd58e887d1)
 
 ## ¿Cómo se despliega el sistema en un entorno de test local? Se requiere un acercamiento inicial a la arquitectura del sistema, aunque se profundizará en el RFI II. - Iker
+Para desplegar el sistema en un entorno de prueba local, utilizaremos Docker Compose, una herramienta que facilita la gestión de aplicaciones multi-contenedor.
 
-Miembro:
-- Xinyu Chen: Product Owner
-- Igor Irigoyen: Jefe (Scrum Master)
-- Iker Urdaniz: Desarrollador
+Para ello, proporcionamos un archivo de configuración docker-compose.yml, que define y configura los servicios necesarios para el despliegue: talto el servidor web y la base de datos, como los puertos a través de los cuales se accederá a la aplicación. Además, se emplea un archivo Dockerfile, que contiene las instrucciones para la construcción de la imagen del servidor web.
+
+La aplicación se puede ejecutar mediante un comando específico (`docker compose up`) que inicia el despliegue del sistema en su entorno local. Este proceso se lleva a cabo de manera automatizada y garantiza la consistencia del entorno de prueba con el sistema en producción.
+
+Este método permite una configuración rápida, consistente y eficiente de todos los entornos.
+
+![imagen](https://github.com/ikerurda/Gestion-de-tecnologias-informaticas-en-las-organizaciones/assets/45340417/dc9bb1a5-7c7f-4548-a3be-40d4355f8f27)
