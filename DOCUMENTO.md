@@ -1,5 +1,7 @@
 # RFI I
 ## ¿Cómo es la organización de un equipo de desarrollo, mantenimiento y operaciones del proyecto votación? - Igor
+La organización del equipo de desarrollo esta dividida por roles: Product Owner, Scrum Master y Desarrolladores.
+Al la hora de mantener el desarrollo el Product Owner prioriza los requerimientos del cliente y el Scrum Master organiza a los desarrolladores para un desarrollo de calidad.
 
 ## ¿Quiénes son los miembros del equipo y cuáles son sus roles? - Igor
 El equipo esta conformado por tres miembros:
