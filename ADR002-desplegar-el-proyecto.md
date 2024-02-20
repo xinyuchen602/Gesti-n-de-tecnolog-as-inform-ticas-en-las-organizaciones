@@ -2,7 +2,7 @@
 
 ## Contexto y Planteamiento del Problema
 
-* Es necesario seleccionar un sistema de gestión de base de datos para el almacenamiento de los datos del proyecto y interacción entre backend y frontend.
+* Se necesita establecer un método eficiente para desplegar el proyecto web localmente durante el desarrollo.
 
 ## Opciones Consideradas
 
