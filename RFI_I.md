@@ -1,8 +1,27 @@
 # RFI I
 ## ¿Cómo es la organización de un equipo de desarrollo, mantenimiento y operaciones del proyecto votación? - Igor
-La organización del equipo de desarrollo esta dividida por roles: Product Owner, Scrum Master y Desarrolladores.
-Al la hora de mantener el desarrollo el Product Owner prioriza los requerimientos del cliente y el Scrum Master organiza a los desarrolladores para un desarrollo de calidad.
+La empresa esta organizada en distintos categorías, por una parte estan los participantes del equipo de un equipo de desarrollo, formado por los siguientes tres roles:
 
+**Product Owner:** 
+- Es el responsable de representar los intereses del cliente y del usuario final. Define y prioriza los elementos del backlog del producto, asegurando que el equipo esté construyendo las características más valiosas y relevantes para el sistema de votación.  
+
+**Scrum Master:** 
+- Es el facilitador del equipo Scrum. Se asegura de que el equipo comprenda y siga los principios y prácticas de Scrum. Ayuda a resolver los obstáculos que puedan surgir durante el desarrollo y promueve un ambiente de colaboración y mejora continua.  
+
+**Desarrollor:**  
+- Los encargados de desarrollar las funcionalidades del sistema de votación de acuerdo con las prioridades del backlog del producto.
+
+Dejando a un lado el equipo de desarrollo la empresa cuenta también con otros dos equipos para complementar el trabajo del equipo de desarrollo:
+
+**Equipo de Mantenimiento:**  
+- **Ingenieros de Software:** Responsables de mantener y mejorar continuamente el sistema de votación, implementando nuevas características y correcciones de errores según lo priorizado por el Product Owner.  
+- **Control de Calidad:** Realizan pruebas de calidad en las nuevas funcionalidades y en las actualizaciones del sistema para garantizar que cumplan con los estándares de calidad definidos.  
+
+**Equipo de Operaciones:**
+- **Administradores de Sistemas:** Se encargan de implementar y mantener la infraestructura necesaria para el sistema de votación.  
+- **Administradores de Bases de Datos:** Gestionan y mantienen las bases de datos utilizadas por el sistema de votación.  
+- **Desplegadores:** Responsables de implementar nuevas versiones del sistema de votación en los entornos de producción y de preproducción.
+   
 ## ¿Quiénes son los miembros del equipo y cuáles son sus roles? - Igor
 El equipo esta conformado por tres miembros:
 - Xinyu Chen, quien desempeña el rol de Product Owner. Su función principal es actuar como intermediario entre nuestro equipo y el cliente, abordando las incertidumbres del equipo y supervisando el proceso para garantizar que el producto desarrollado cumpla con los requisitos establecidos.
