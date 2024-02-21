@@ -1,6 +1,6 @@
 services:
   web:
-    build: ./web
+    build: ./gestecord
     ports:
       - 8080:80
   db:
