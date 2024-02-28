@@ -10,7 +10,8 @@ jobs:
     - name: Checkout del código
       uses: actions/checkout@master
 
-    
-    - name: Build and Deploy
-      run: |
-        npm run build
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build
+      run: npm run build
