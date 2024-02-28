@@ -1,5 +1,10 @@
+import { getDB } from '@/lib/mongodb'
 import { NextRequest, NextResponse } from 'next/server'
 
-export function GET(req: NextRequest) {
-  return NextResponse.json({ message: 'Hello from Next.js!' })
+export const dynamic = 'force-dynamic';
+
+export async function GET(req: NextRequest) {
+  const db = await getDB();
+  const movies = db.collection("movies").find();
+  return NextResponse.json(movies, { status: 200 })
 }

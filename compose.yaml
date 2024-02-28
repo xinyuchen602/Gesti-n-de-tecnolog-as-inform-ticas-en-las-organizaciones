@@ -4,7 +4,15 @@ services:
     ports:
       - 8080:80
   db:
-    image: postgres:16.2
+    image: mongo:7.0.5-jammy
+    command: --quiet
+    ports:
+      - 27017:27017
     environment:
-      POSTGRES_USER: web
-      POSTGRES_PASSWORD: changeme
+      - MONGO_INITDB_DATABASE=gestecord
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
+    volumes:
+      - mongodb:/data/db
+volumes:
+  mongodb:
