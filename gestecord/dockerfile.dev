@@ -1,0 +1,9 @@
+FROM node
+
+ENV PORT 80
+ENV WORKDIR /tmp/web
+
+EXPOSE ${PORT}
+
+WORKDIR ${WORKDIR}
+CMD npm run dev

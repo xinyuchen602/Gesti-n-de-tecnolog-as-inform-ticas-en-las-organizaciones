@@ -1,6 +1,10 @@
 services:
   web:
-    build: ./gestecord
+    build:
+      context: ./gestecord
+    #   dockerfile: 'dockerfile.dev'
+    # volumes:
+    #   - ./gestecord:/tmp/web
     ports:
       - 8080:80
   db:
