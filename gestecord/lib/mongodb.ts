@@ -1,5 +1,4 @@
 import { MongoClient } from "mongodb";
-
 if (!process.env.MONGODB_HOST) throw new Error('Invalid/Missing environment variable: "MONGODB_HOST"');
 const host = process.env.MONGODB_HOST;
 if (!process.env.MONGODB_DB) throw new Error('Invalid/Missing environment variable: "MONGODB_DB"');
