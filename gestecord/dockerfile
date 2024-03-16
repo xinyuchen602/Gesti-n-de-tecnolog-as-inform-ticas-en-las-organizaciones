@@ -7,6 +7,8 @@ EXPOSE ${PORT}
 COPY . ${WORKDIR}
 WORKDIR ${WORKDIR}
 RUN npm install
+RUN npm install zod
 RUN npm run build
+
 
 CMD npm run start

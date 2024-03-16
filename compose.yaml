@@ -3,12 +3,14 @@ networks:
 services:
   web:
     build: ./gestecord
+    restart: always
     ports:
       - 8080:80
     networks:
       - kong-net
   db:
     image: mongo:7.0.5-jammy
+    restart: always
     command: --quiet
     ports:
       - 27017:27017
