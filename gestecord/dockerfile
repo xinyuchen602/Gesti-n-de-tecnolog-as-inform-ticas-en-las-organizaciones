@@ -1,13 +1,13 @@
 FROM node
 
 ENV PORT 80
+
 ENV WORKDIR /tmp/web
 EXPOSE ${PORT}
 
 COPY . ${WORKDIR}
 WORKDIR ${WORKDIR}
 RUN npm install
-RUN npm install zod
 RUN npm run build
 
 

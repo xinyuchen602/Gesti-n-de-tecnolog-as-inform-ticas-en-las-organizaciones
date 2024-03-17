@@ -6,6 +6,7 @@ services:
     restart: always
     ports:
       - 8080:80
+      - 3000:3000
     networks:
       - kong-net
   db:
@@ -18,8 +19,8 @@ services:
       - MONGO_INITDB_DATABASE=gestecord
       - MONGO_INITDB_ROOT_USERNAME=admin
       - MONGO_INITDB_ROOT_PASSWORD=admin
-    volumes:
-      - mongodb:/data/db
+    # volumes:
+    #   - mongodb:/data/db
     networks:
       - kong-net
 
@@ -138,6 +139,6 @@ services:
       - kong-database
     ports:
       - "1337:1337"
-volumes:
-  mongodb:
+# volumes:
+#   mongodb:
 

@@ -35,3 +35,585 @@ stack traceback:
 2024/03/16 11:31:37 [notice] 1279#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
 2024/03/16 11:31:37 [notice] 1279#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
 2024/03/16 11:32:36 [error] 1279#0: *10289 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.16.1, server: kong, request: "GET /api/hello HTTP/1.1", upstream: "http://172.18.176.1:8080/api/hello", host: "localhost:8000", request_id: "564f5b731cfabf34692e623bf2fe5c09"
+2024/03/16 11:37:34 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:37:36 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:37:40 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:37:42 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:37:44 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 0b35438c-3b58-4edc-bcaa-54113ead2e44
+2024/03/16 11:37:44 [notice] 1#0: using the "epoll" event method
+2024/03/16 11:37:44 [notice] 1#0: openresty/1.25.3.1
+2024/03/16 11:37:44 [notice] 1#0: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/03/16 11:37:44 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/16 11:37:44 [notice] 1#0: start worker processes
+2024/03/16 11:37:44 [notice] 1#0: start worker process 1279
+2024/03/16 11:37:44 [notice] 1#0: start worker process 1280
+2024/03/16 11:37:44 [notice] 1#0: start worker process 1281
+2024/03/16 11:37:44 [notice] 1#0: start worker process 1282
+2024/03/16 11:37:44 [notice] 1#0: start worker process 1283
+2024/03/16 11:37:44 [notice] 1#0: start worker process 1284
+2024/03/16 11:37:44 [notice] 1#0: start worker process 1285
+2024/03/16 11:37:44 [notice] 1#0: start worker process 1286
+2024/03/16 11:37:46 [notice] 1279#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/16 11:37:46 [notice] 1279#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/16 11:40:16 [error] 1279#0: *10297 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.32.1, server: kong, request: "GET /api/hello HTTP/1.1", upstream: "http://172.18.176.1:8080/api/hello", host: "localhost:8000", request_id: "a4df9e564ab7f513d7b85c5491714471"
+2024/03/16 11:40:51 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:40:53 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:40:57 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:41:00 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:41:02 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 6826e549-01a0-4095-b4d0-6569a1d837fd
+2024/03/16 11:41:02 [notice] 1#0: using the "epoll" event method
+2024/03/16 11:41:02 [notice] 1#0: openresty/1.25.3.1
+2024/03/16 11:41:02 [notice] 1#0: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/03/16 11:41:02 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/16 11:41:02 [notice] 1#0: start worker processes
+2024/03/16 11:41:02 [notice] 1#0: start worker process 1279
+2024/03/16 11:41:02 [notice] 1#0: start worker process 1280
+2024/03/16 11:41:02 [notice] 1#0: start worker process 1281
+2024/03/16 11:41:02 [notice] 1#0: start worker process 1282
+2024/03/16 11:41:02 [notice] 1#0: start worker process 1283
+2024/03/16 11:41:02 [notice] 1#0: start worker process 1284
+2024/03/16 11:41:02 [notice] 1#0: start worker process 1285
+2024/03/16 11:41:02 [notice] 1#0: start worker process 1286
+2024/03/16 11:41:03 [notice] 1279#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/16 11:41:03 [notice] 1279#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/16 11:41:25 [error] 1279#0: *10282 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.48.1, server: kong, request: "GET /api/hello HTTP/1.1", upstream: "http://172.18.176.1:8080/api/hello", host: "localhost:8000", request_id: "0f25d14f80a55746bda3c37a5397b002"
+2024/03/16 11:41:27 [error] 1279#0: *10284 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.48.1, server: kong, request: "GET /api/hello HTTP/1.1", upstream: "http://172.18.176.1:8080/api/hello", host: "localhost:8000", request_id: "3f2bcb1f4f4556346bb1a715b6d11b0a"
+2024/03/16 11:41:30 [error] 1279#0: *10286 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.48.1, server: kong, request: "GET /api/hello HTTP/1.1", upstream: "http://172.18.176.1:8080/api/hello", host: "localhost:8000", request_id: "1c8677500bd2b27a37124a3c05396534"
+2024/03/16 11:41:40 [error] 1279#0: *10292 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.48.1, server: kong, request: "GET /api/hello HTTP/1.1", host: "localhost:8000", request_id: "929c1d4acd9e405d75fec23e52116471"
+2024/03/16 11:44:41 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:44:44 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:44:46 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:44:49 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:44:52 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: baa3d60f-777b-4e2e-a4fe-c21f99961eb6
+2024/03/16 11:44:52 [notice] 1#0: using the "epoll" event method
+2024/03/16 11:44:52 [notice] 1#0: openresty/1.25.3.1
+2024/03/16 11:44:52 [notice] 1#0: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/03/16 11:44:52 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/16 11:44:52 [notice] 1#0: start worker processes
+2024/03/16 11:44:52 [notice] 1#0: start worker process 1279
+2024/03/16 11:44:52 [notice] 1#0: start worker process 1280
+2024/03/16 11:44:52 [notice] 1#0: start worker process 1281
+2024/03/16 11:44:52 [notice] 1#0: start worker process 1282
+2024/03/16 11:44:52 [notice] 1#0: start worker process 1283
+2024/03/16 11:44:52 [notice] 1#0: start worker process 1284
+2024/03/16 11:44:52 [notice] 1#0: start worker process 1285
+2024/03/16 11:44:52 [notice] 1#0: start worker process 1286
+2024/03/16 11:44:54 [notice] 1279#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/16 11:44:54 [notice] 1279#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/16 11:45:18 [error] 1279#0: *10282 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.80.1, server: kong, request: "GET /api/hello HTTP/1.1", host: "localhost:8000", request_id: "291d8a31ba71c618b688af0c2fd33268"
+2024/03/16 11:45:19 [error] 1279#0: *10282 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.80.1, server: kong, request: "GET /api/hello HTTP/1.1", host: "localhost:8000", request_id: "645b6916b5251d76bf2d2f232a33140f"
+2024/03/16 11:51:58 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:52:00 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:52:03 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:52:05 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: a1bb4f97-ae4c-46cd-9a18-5dd822327ced
+2024/03/16 11:52:05 [notice] 1#0: using the "epoll" event method
+2024/03/16 11:52:05 [notice] 1#0: openresty/1.25.3.1
+2024/03/16 11:52:05 [notice] 1#0: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/03/16 11:52:05 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/16 11:52:05 [notice] 1#0: start worker processes
+2024/03/16 11:52:05 [notice] 1#0: start worker process 1279
+2024/03/16 11:52:05 [notice] 1#0: start worker process 1280
+2024/03/16 11:52:05 [notice] 1#0: start worker process 1281
+2024/03/16 11:52:05 [notice] 1#0: start worker process 1282
+2024/03/16 11:52:05 [notice] 1#0: start worker process 1283
+2024/03/16 11:52:05 [notice] 1#0: start worker process 1284
+2024/03/16 11:52:05 [notice] 1#0: start worker process 1285
+2024/03/16 11:52:05 [notice] 1#0: start worker process 1286
+2024/03/16 11:52:07 [notice] 1279#0: *2 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/16 11:52:07 [notice] 1279#0: *2 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/16 11:53:16 [error] 1280#0: *10298 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.96.1, server: kong, request: "GET /api/hello HTTP/1.1", upstream: "http://172.18.176.1:8080/api/hello", host: "localhost:8000", request_id: "4385287e08e9aa77d65c3c56c9148f4a"
+2024/03/16 11:56:26 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:56:29 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:56:32 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:56:35 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:56:37 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:56:40 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: ac276028-dbd6-4d21-9075-9abdbf6bd614
+2024/03/16 11:56:40 [notice] 1#0: using the "epoll" event method
+2024/03/16 11:56:40 [notice] 1#0: openresty/1.25.3.1
+2024/03/16 11:56:40 [notice] 1#0: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/03/16 11:56:40 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/16 11:56:40 [notice] 1#0: start worker processes
+2024/03/16 11:56:40 [notice] 1#0: start worker process 1279
+2024/03/16 11:56:40 [notice] 1#0: start worker process 1280
+2024/03/16 11:56:40 [notice] 1#0: start worker process 1281
+2024/03/16 11:56:40 [notice] 1#0: start worker process 1282
+2024/03/16 11:56:40 [notice] 1#0: start worker process 1283
+2024/03/16 11:56:40 [notice] 1#0: start worker process 1284
+2024/03/16 11:56:40 [notice] 1#0: start worker process 1285
+2024/03/16 11:56:40 [notice] 1#0: start worker process 1286
+2024/03/16 11:56:42 [notice] 1279#0: *5 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/16 11:56:42 [notice] 1279#0: *5 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/16 11:56:49 [error] 1280#0: *10274 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.112.1, server: kong, request: "GET /api/hello HTTP/1.1", upstream: "http://172.18.176.1:8080/api/hello", host: "localhost:8000", request_id: "0861d47d975a2014dc80b41abc49e172"
+2024/03/16 11:56:54 [error] 1280#0: *10284 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.112.1, server: kong, request: "GET /api/hello HTTP/1.1", upstream: "http://172.18.176.1:8080/api/hello", host: "localhost:8000", request_id: "e38fd35e9f3fb0549a9b1c5f27f4643d"
+2024/03/16 11:58:21 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:58:24 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:58:27 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:58:30 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/16 11:58:33 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: e31f739d-5279-44f5-9eb7-f8ac5037d3c7
+2024/03/16 11:58:33 [notice] 1#0: using the "epoll" event method
+2024/03/16 11:58:33 [notice] 1#0: openresty/1.25.3.1
+2024/03/16 11:58:33 [notice] 1#0: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/03/16 11:58:33 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/16 11:58:33 [notice] 1#0: start worker processes
+2024/03/16 11:58:33 [notice] 1#0: start worker process 1279
+2024/03/16 11:58:33 [notice] 1#0: start worker process 1280
+2024/03/16 11:58:33 [notice] 1#0: start worker process 1281
+2024/03/16 11:58:33 [notice] 1#0: start worker process 1282
+2024/03/16 11:58:33 [notice] 1#0: start worker process 1283
+2024/03/16 11:58:33 [notice] 1#0: start worker process 1284
+2024/03/16 11:58:33 [notice] 1#0: start worker process 1285
+2024/03/16 11:58:33 [notice] 1#0: start worker process 1286
+2024/03/16 11:58:34 [notice] 1279#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/16 11:58:34 [notice] 1279#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/17 16:54:44 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 16:54:48 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 16:54:51 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 16:54:55 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 16:54:57 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 16:55:01 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 445f4d15-b50c-4b46-a9a9-62feaf8bd28e
+2024/03/17 16:55:01 [notice] 1#0: using the "epoll" event method
+2024/03/17 16:55:01 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 16:55:01 [notice] 1#0: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/03/17 16:55:01 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 16:55:01 [notice] 1#0: start worker processes
+2024/03/17 16:55:01 [notice] 1#0: start worker process 1279
+2024/03/17 16:55:01 [notice] 1#0: start worker process 1280
+2024/03/17 16:55:01 [notice] 1#0: start worker process 1281
+2024/03/17 16:55:01 [notice] 1#0: start worker process 1282
+2024/03/17 16:55:01 [notice] 1#0: start worker process 1283
+2024/03/17 16:55:01 [notice] 1#0: start worker process 1284
+2024/03/17 16:55:01 [notice] 1#0: start worker process 1285
+2024/03/17 16:55:01 [notice] 1#0: start worker process 1286
+2024/03/17 16:55:03 [notice] 1279#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 16:55:03 [notice] 1279#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/17 16:56:15 [error] 1279#0: *10297 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.144.1, server: kong, request: "GET /api/hello HTTP/1.1", upstream: "http://172.18.176.1:8080/api/hello", host: "localhost:8000", request_id: "9336364c0157046c223d467064e60a1a"
+2024/03/17 17:01:47 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:01:51 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:01:55 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:01:59 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 3d557e36-46dd-4d41-b2b2-cde522a4ffbe
+2024/03/17 17:01:59 [notice] 1#0: using the "epoll" event method
+2024/03/17 17:01:59 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 17:01:59 [notice] 1#0: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/03/17 17:01:59 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 17:01:59 [notice] 1#0: start worker processes
+2024/03/17 17:01:59 [notice] 1#0: start worker process 1279
+2024/03/17 17:01:59 [notice] 1#0: start worker process 1280
+2024/03/17 17:01:59 [notice] 1#0: start worker process 1281
+2024/03/17 17:01:59 [notice] 1#0: start worker process 1282
+2024/03/17 17:01:59 [notice] 1#0: start worker process 1283
+2024/03/17 17:01:59 [notice] 1#0: start worker process 1284
+2024/03/17 17:01:59 [notice] 1#0: start worker process 1285
+2024/03/17 17:01:59 [notice] 1#0: start worker process 1286
+2024/03/17 17:02:00 [notice] 1279#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 17:02:00 [notice] 1279#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/17 17:04:15 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:04:18 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:04:22 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:04:26 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: a040d833-41d7-4a82-bd7a-d3fe80082afc
+2024/03/17 17:04:26 [notice] 1#0: using the "epoll" event method
+2024/03/17 17:04:26 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 17:04:26 [notice] 1#0: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/03/17 17:04:26 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 17:04:26 [notice] 1#0: start worker processes
+2024/03/17 17:04:26 [notice] 1#0: start worker process 1278
+2024/03/17 17:04:26 [notice] 1#0: start worker process 1279
+2024/03/17 17:04:26 [notice] 1#0: start worker process 1280
+2024/03/17 17:04:26 [notice] 1#0: start worker process 1281
+2024/03/17 17:04:26 [notice] 1#0: start worker process 1282
+2024/03/17 17:04:26 [notice] 1#0: start worker process 1283
+2024/03/17 17:04:26 [notice] 1#0: start worker process 1284
+2024/03/17 17:04:26 [notice] 1#0: start worker process 1285
+2024/03/17 17:04:27 [notice] 1278#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 17:04:27 [notice] 1278#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/17 17:06:04 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:06:08 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:06:12 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:06:15 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 245613f4-c1b0-42a6-abc3-2dfbc08f10a6
+2024/03/17 17:06:15 [notice] 1#0: using the "epoll" event method
+2024/03/17 17:06:15 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 17:06:15 [notice] 1#0: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/03/17 17:06:15 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 17:06:15 [notice] 1#0: start worker processes
+2024/03/17 17:06:15 [notice] 1#0: start worker process 1279
+2024/03/17 17:06:15 [notice] 1#0: start worker process 1280
+2024/03/17 17:06:15 [notice] 1#0: start worker process 1281
+2024/03/17 17:06:15 [notice] 1#0: start worker process 1282
+2024/03/17 17:06:15 [notice] 1#0: start worker process 1283
+2024/03/17 17:06:15 [notice] 1#0: start worker process 1284
+2024/03/17 17:06:15 [notice] 1#0: start worker process 1285
+2024/03/17 17:06:15 [notice] 1#0: start worker process 1286
+2024/03/17 17:06:17 [notice] 1279#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 17:06:17 [notice] 1279#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/17 17:16:26 [notice] 1#0: signal 3 (SIGQUIT) received, shutting down
+2024/03/17 17:16:26 [notice] 1279#0: gracefully shutting down
+2024/03/17 17:16:26 [notice] 1280#0: gracefully shutting down
+2024/03/17 17:16:26 [notice] 1281#0: gracefully shutting down
+2024/03/17 17:16:26 [notice] 1282#0: gracefully shutting down
+2024/03/17 17:16:26 [notice] 1284#0: gracefully shutting down
+2024/03/17 17:16:26 [notice] 1285#0: gracefully shutting down
+2024/03/17 17:16:26 [notice] 1283#0: gracefully shutting down
+2024/03/17 17:16:26 [notice] 1286#0: gracefully shutting down
+2024/03/17 17:16:27 [notice] 1285#0: exiting
+2024/03/17 17:16:27 [notice] 1285#0: exit
+2024/03/17 17:16:27 [notice] 1#0: signal 17 (SIGCHLD) received from 1285
+2024/03/17 17:16:27 [notice] 1#0: worker process 1285 exited with code 0
+2024/03/17 17:16:27 [notice] 1#0: signal 29 (SIGIO) received
+2024/03/17 17:16:27 [notice] 1279#0: exiting
+2024/03/17 17:16:27 [notice] 1279#0: exit
+2024/03/17 17:16:27 [notice] 1#0: signal 17 (SIGCHLD) received from 1279
+2024/03/17 17:16:27 [notice] 1#0: worker process 1279 exited with code 0
+2024/03/17 17:16:27 [notice] 1#0: signal 29 (SIGIO) received
+2024/03/17 17:16:27 [notice] 1281#0: exiting
+2024/03/17 17:16:27 [notice] 1286#0: exiting
+2024/03/17 17:16:27 [notice] 1282#0: exiting
+2024/03/17 17:16:27 [notice] 1280#0: exiting
+2024/03/17 17:16:27 [notice] 1281#0: exit
+2024/03/17 17:16:27 [notice] 1#0: signal 17 (SIGCHLD) received from 1281
+2024/03/17 17:16:27 [notice] 1#0: worker process 1281 exited with code 0
+2024/03/17 17:16:27 [notice] 1#0: signal 29 (SIGIO) received
+2024/03/17 17:16:27 [notice] 1284#0: exiting
+2024/03/17 17:16:27 [notice] 1286#0: exit
+2024/03/17 17:16:27 [notice] 1#0: signal 17 (SIGCHLD) received from 1286
+2024/03/17 17:16:27 [notice] 1#0: worker process 1286 exited with code 0
+2024/03/17 17:16:27 [notice] 1#0: signal 29 (SIGIO) received
+2024/03/17 17:16:27 [notice] 1282#0: exit
+2024/03/17 17:16:27 [notice] 1280#0: exit
+2024/03/17 17:16:27 [notice] 1#0: signal 17 (SIGCHLD) received from 1280
+2024/03/17 17:16:27 [notice] 1#0: worker process 1280 exited with code 0
+2024/03/17 17:16:27 [notice] 1#0: worker process 1282 exited with code 0
+2024/03/17 17:16:27 [notice] 1#0: signal 29 (SIGIO) received
+2024/03/17 17:16:27 [notice] 1284#0: exit
+2024/03/17 17:16:27 [notice] 1#0: signal 17 (SIGCHLD) received from 1284
+2024/03/17 17:16:27 [notice] 1#0: worker process 1284 exited with code 0
+2024/03/17 17:16:27 [notice] 1#0: signal 29 (SIGIO) received
+2024/03/17 17:16:27 [notice] 1283#0: exiting
+2024/03/17 17:16:27 [notice] 1283#0: exit
+2024/03/17 17:16:27 [notice] 1#0: signal 17 (SIGCHLD) received from 1283
+2024/03/17 17:16:27 [notice] 1#0: worker process 1283 exited with code 0
+2024/03/17 17:16:27 [notice] 1#0: exit
+2024/03/17 17:16:50 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: efaf5689-3c9f-462e-a316-f170baadf914
+2024/03/17 17:16:50 [notice] 1#0: using the "epoll" event method
+2024/03/17 17:16:50 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 17:16:50 [notice] 1#0: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/03/17 17:16:50 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 17:16:50 [notice] 1#0: start worker processes
+2024/03/17 17:16:50 [notice] 1#0: start worker process 1277
+2024/03/17 17:16:50 [notice] 1#0: start worker process 1278
+2024/03/17 17:16:50 [notice] 1#0: start worker process 1279
+2024/03/17 17:16:50 [notice] 1#0: start worker process 1280
+2024/03/17 17:16:50 [notice] 1#0: start worker process 1281
+2024/03/17 17:16:50 [notice] 1#0: start worker process 1282
+2024/03/17 17:16:50 [notice] 1#0: start worker process 1283
+2024/03/17 17:16:50 [notice] 1#0: start worker process 1284
+2024/03/17 17:16:51 [notice] 1277#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 17:16:51 [notice] 1277#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/17 17:18:53 [error] 1277#0: *10298 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.208.1, server: kong, request: "GET /api/hello HTTP/1.1", upstream: "http://172.18.176.1:8080/api/hello", host: "localhost:8000", request_id: "0d74705550fe36071274fb004d8ea878"
+2024/03/17 17:18:57 [error] 1277#0: *10300 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.208.1, server: kong, request: "GET /api/hello HTTP/1.1", host: "localhost:8000", request_id: "e70d0b31e5ecfb4f711e6d5d86575475"
+2024/03/17 17:19:08 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:19:12 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:19:16 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:19:20 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:19:23 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:19:27 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 9e0587eb-28d2-4a50-9601-79e9ba2af7c1
+2024/03/17 17:19:27 [notice] 1#0: using the "epoll" event method
+2024/03/17 17:19:27 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 17:19:27 [notice] 1#0: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/03/17 17:19:27 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 17:19:27 [notice] 1#0: start worker processes
+2024/03/17 17:19:27 [notice] 1#0: start worker process 1279
+2024/03/17 17:19:27 [notice] 1#0: start worker process 1280
+2024/03/17 17:19:27 [notice] 1#0: start worker process 1281
+2024/03/17 17:19:27 [notice] 1#0: start worker process 1282
+2024/03/17 17:19:27 [notice] 1#0: start worker process 1283
+2024/03/17 17:19:27 [notice] 1#0: start worker process 1284
+2024/03/17 17:19:27 [notice] 1#0: start worker process 1285
+2024/03/17 17:19:27 [notice] 1#0: start worker process 1286
+2024/03/17 17:19:29 [notice] 1279#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 17:19:29 [notice] 1279#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/17 17:19:42 [error] 1279#0: *10280 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.224.1, server: kong, request: "GET /api/hello HTTP/1.1", host: "localhost:8000", request_id: "30c5756c6b2f922d9ed8c449c05c8118"
+2024/03/17 17:19:44 [error] 1279#0: *10284 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.224.1, server: kong, request: "GET /api/hello HTTP/1.1", upstream: "http://172.18.176.1:8080/api/hello", host: "localhost:8000", request_id: "19988f713496bf104beb4b6ebae1286f"
+2024/03/17 17:27:23 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:27:28 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:27:32 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:27:35 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:27:39 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:27:43 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 7afab1cc-ed30-49c6-9398-6498fe8abd9a
+2024/03/17 17:27:43 [notice] 1#0: using the "epoll" event method
+2024/03/17 17:27:43 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 17:27:43 [notice] 1#0: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/03/17 17:27:43 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 17:27:43 [notice] 1#0: start worker processes
+2024/03/17 17:27:43 [notice] 1#0: start worker process 1279
+2024/03/17 17:27:43 [notice] 1#0: start worker process 1280
+2024/03/17 17:27:43 [notice] 1#0: start worker process 1281
+2024/03/17 17:27:43 [notice] 1#0: start worker process 1282
+2024/03/17 17:27:43 [notice] 1#0: start worker process 1283
+2024/03/17 17:27:43 [notice] 1#0: start worker process 1284
+2024/03/17 17:27:43 [notice] 1#0: start worker process 1285
+2024/03/17 17:27:43 [notice] 1#0: start worker process 1286
+2024/03/17 17:27:44 [notice] 1279#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 17:27:44 [notice] 1279#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/17 17:50:45 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:50:50 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:50:56 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:51:00 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:51:04 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 17:51:08 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: adba9213-bd40-4cf5-8734-ae6daaa88865
+2024/03/17 17:51:08 [notice] 1#0: using the "epoll" event method
+2024/03/17 17:51:08 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 17:51:08 [notice] 1#0: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/03/17 17:51:08 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 17:51:08 [notice] 1#0: start worker processes
+2024/03/17 17:51:08 [notice] 1#0: start worker process 1279
+2024/03/17 17:51:08 [notice] 1#0: start worker process 1280
+2024/03/17 17:51:08 [notice] 1#0: start worker process 1281
+2024/03/17 17:51:08 [notice] 1#0: start worker process 1282
+2024/03/17 17:51:08 [notice] 1#0: start worker process 1283
+2024/03/17 17:51:08 [notice] 1#0: start worker process 1284
+2024/03/17 17:51:08 [notice] 1#0: start worker process 1285
+2024/03/17 17:51:08 [notice] 1#0: start worker process 1286
+2024/03/17 17:51:11 [notice] 1279#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 17:51:11 [notice] 1279#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/17 18:25:45 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 18:26:01 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 18:26:14 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 18:26:27 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: ae0830e7-44ad-4fe1-b0ab-5804b7309ff7
+2024/03/17 18:26:27 [notice] 1#0: using the "epoll" event method
+2024/03/17 18:26:27 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 18:26:27 [notice] 1#0: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/03/17 18:26:27 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 18:26:27 [notice] 1#0: start worker processes
+2024/03/17 18:26:27 [notice] 1#0: start worker process 1285
+2024/03/17 18:26:27 [notice] 1#0: start worker process 1286
+2024/03/17 18:26:27 [notice] 1#0: start worker process 1287
+2024/03/17 18:26:27 [notice] 1#0: start worker process 1288
+2024/03/17 18:26:27 [notice] 1#0: start worker process 1289
+2024/03/17 18:26:27 [notice] 1#0: start worker process 1290
+2024/03/17 18:26:27 [notice] 1#0: start worker process 1291
+2024/03/17 18:26:27 [notice] 1#0: start worker process 1292
+2024/03/17 18:26:30 [notice] 1285#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 18:26:30 [notice] 1285#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
