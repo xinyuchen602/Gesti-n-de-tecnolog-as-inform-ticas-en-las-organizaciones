@@ -961,3 +961,61 @@ stack traceback:
 2024/03/19 17:26:57 [notice] 1#0: start worker process 1327
 2024/03/19 17:26:59 [notice] 1320#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
 2024/03/19 17:26:59 [notice] 1320#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/19 17:31:38 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 0d20b6d3-dee3-4853-a82e-2f46b93ab28f
+2024/03/19 17:31:38 [notice] 1#0: using the "epoll" event method
+2024/03/19 17:31:38 [notice] 1#0: openresty/1.25.3.1
+2024/03/19 17:31:38 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/19 17:31:38 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/19 17:31:38 [notice] 1#0: start worker processes
+2024/03/19 17:31:38 [notice] 1#0: start worker process 1326
+2024/03/19 17:31:38 [notice] 1#0: start worker process 1327
+2024/03/19 17:31:38 [notice] 1#0: start worker process 1328
+2024/03/19 17:31:38 [notice] 1#0: start worker process 1329
+2024/03/19 17:31:38 [notice] 1#0: start worker process 1330
+2024/03/19 17:31:38 [notice] 1#0: start worker process 1331
+2024/03/19 17:31:38 [notice] 1#0: start worker process 1332
+2024/03/19 17:31:38 [notice] 1#0: start worker process 1333
+2024/03/19 17:31:42 [notice] 1326#0: *2 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/19 17:31:42 [notice] 1326#0: *2 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/19 17:36:50 [error] 1327#0: *5241 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "92f8844533cd601fa1f4787991421915"
+2024/03/19 17:37:11 [error] 1327#0: *5273 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "2d302b1314001647f8d22c30e6a76b48"
+2024/03/19 17:37:11 [error] 1327#0: *5241 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "92f8844533cd601fa1f4787991421915"
+2024/03/19 17:37:12 [error] 1327#0: *5276 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "a4efc265618468777415807a849be951"
+2024/03/19 17:37:32 [error] 1327#0: *5273 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "2d302b1314001647f8d22c30e6a76b48"
+2024/03/19 17:37:32 [error] 1327#0: *5241 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "92f8844533cd601fa1f4787991421915"
+2024/03/19 17:37:33 [error] 1327#0: *5276 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "a4efc265618468777415807a849be951"
+2024/03/19 17:37:53 [error] 1327#0: *5273 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "2d302b1314001647f8d22c30e6a76b48"
+2024/03/19 17:37:53 [error] 1327#0: *5241 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "92f8844533cd601fa1f4787991421915"
+2024/03/19 17:37:54 [error] 1327#0: *5276 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "a4efc265618468777415807a849be951"
+2024/03/19 17:38:14 [error] 1327#0: *5273 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "2d302b1314001647f8d22c30e6a76b48"
+2024/03/19 17:38:14 [error] 1327#0: *5241 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "92f8844533cd601fa1f4787991421915"
+2024/03/19 17:38:15 [error] 1327#0: *5276 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "a4efc265618468777415807a849be951"
+2024/03/19 17:38:35 [error] 1327#0: *5273 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "2d302b1314001647f8d22c30e6a76b48"
+2024/03/19 17:38:35 [error] 1327#0: *5241 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "92f8844533cd601fa1f4787991421915"
+2024/03/19 17:38:36 [error] 1327#0: *5276 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "a4efc265618468777415807a849be951"
+2024/03/19 17:38:56 [error] 1327#0: *5273 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "2d302b1314001647f8d22c30e6a76b48"
+2024/03/19 17:38:57 [error] 1327#0: *5276 connect() failed (111: Connection refused) while connecting to upstream, client: 172.31.0.1, server: kong, request: "GET /api/contestants HTTP/1.1", upstream: "http://172.18.176.2:8080/api/contestants", host: "localhost:8000", referrer: "http://localhost:8080/", request_id: "a4efc265618468777415807a849be951"
+2024/03/19 17:39:58 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 46ef250b-af4d-49c1-ac9a-ac4b3d6b1470
+2024/03/19 17:39:58 [notice] 1#0: using the "epoll" event method
+2024/03/19 17:39:58 [notice] 1#0: openresty/1.25.3.1
+2024/03/19 17:39:58 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/19 17:39:58 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/19 17:39:58 [notice] 1#0: start worker processes
+2024/03/19 17:39:58 [notice] 1#0: start worker process 1319
+2024/03/19 17:39:58 [notice] 1#0: start worker process 1320
+2024/03/19 17:39:58 [notice] 1#0: start worker process 1321
+2024/03/19 17:39:58 [notice] 1#0: start worker process 1322
+2024/03/19 17:39:58 [notice] 1#0: start worker process 1323
+2024/03/19 17:39:58 [notice] 1#0: start worker process 1324
+2024/03/19 17:39:58 [notice] 1#0: start worker process 1325
+2024/03/19 17:39:58 [notice] 1#0: start worker process 1326
+2024/03/19 17:39:59 [notice] 1319#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/19 17:39:59 [notice] 1319#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 176ms), context: init_worker_by_lua*
+2024/03/19 17:39:59 [notice] 1319#0: *4514 [lua] warmup.lua:46: warming up DNS entries ..., context: ngx.timer
+2024/03/19 17:40:08 [notice] 1319#0: *4514 [lua] warmup.lua:80: finished warming up DNS entries' into the cache (in 8143ms), context: ngx.timer
+2024/03/19 17:40:33 [error] 1319#0: *5180 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "0a2e232944969a3ba7b21739d56a5d2c"
+2024/03/19 17:41:02 [error] 1319#0: *5180 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://192.168.0.3:80/api/votes", host: "localhost:8000", request_id: "2901103897c3f233a65514213d415138"
+2024/03/19 17:41:05 [error] 1319#0: *5180 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://192.168.0.3:80/api/votes", host: "localhost:8000", request_id: "f2e2644e334de8128501b52f83ccba1f"
+2024/03/19 17:41:10 [error] 1319#0: *5180 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://192.168.0.3:80/api/votes", host: "localhost:8000", request_id: "62764356f727fe39c0d2b41d2a1b7e0b"
+2024/03/19 17:41:13 [error] 1319#0: *5180 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://192.168.0.3:80/api/votes", host: "localhost:8000", request_id: "5f546731e2be3173beb54221ecd0f50d"
+2024/03/19 17:41:39 [error] 1319#0: *5180 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://192.168.0.3:80/api/votes", host: "localhost:8000", request_id: "fb30627df6410827655e6d2b308f1d01"
