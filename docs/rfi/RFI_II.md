@@ -2,8 +2,8 @@
 ## Buenas prácticas
 Para que el desarrollo del proyecto se pueda llevar a cabo de la mejor forma posible se han tomado distintas medidas:
 1. Uso de Pull Request, gracias a esto se consigue que todo cambio sea supervisado por al menos otro intregante más y como somos solo dos integrantes, en nuestro caso todo el mundo es conocedor del código subido.
-2. Uso de Issues,
-3. 
+2. Uso de Issues, en este caso hemos usado una de sus funcionalidades "issues" que nos ofrece GitHub, en allí hemos enumerado los distintos problemas que encontramos a la hora de avanzar el proyecto y ver entre todos para solucionar los problemas. 
+3. Reuniones semanales, con las reuniones semanales presenciales conseguimos plantear problemas que hemos tenido durante la semana de forma directa y resolverlos también más eficazmente.
 
 ## Arquitectura  
 
