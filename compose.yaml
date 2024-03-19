@@ -1,16 +1,15 @@
 networks:
     kong-net:
+      
 services:
   web:
     build: ./gestecord
-    restart: always
     ports:
       - 8080:80
     networks:
       - kong-net
   db:
     image: mongo:7.0.5-jammy
-    restart: always
     command: --quiet
     ports:
       - 27017:27017
@@ -37,7 +36,7 @@ services:
       POSTGRES_DB: kong
       POSTGRES_PASSWORD: kong
     volumes:
-      - ./sql:/var/lib/postgresql/data
+      - ./kong-db:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     healthcheck:
@@ -59,11 +58,11 @@ services:
       - KONG_DATABASE=postgres
       - KONG_PG_HOST=kong-database
       - KONG_PG_DATABASE=kong
+      - KONG_PG_USER=kong
       - KONG_PG_PASSWORD=kong
-    links:
-      - kong-database
     depends_on:
-      - kong-database
+      kong-database:
+        condition: service_healthy
 
   #######################################
   # Kong: The API Gateway
@@ -79,6 +78,7 @@ services:
       KONG_DATABASE: postgres
       KONG_PG_HOST: kong-database
       KONG_PG_PASSWORD: kong
+      KONG_PG_USER: kong
       KONG_PROXY_LISTEN: 0.0.0.0:8000
       KONG_PROXY_LISTEN_SSL: 0.0.0.0:8443
       KONG_ADMIN_LISTEN: 0.0.0.0:8001
@@ -90,8 +90,8 @@ services:
       - ./kong_logs:/usr/local/kong/logs
     depends_on:
       - kong-migration
-    links:
       - kong-database
+      
     healthcheck:
       test: ["CMD", "curl", "-f", "http://kong:8001"]
       interval: 5s
@@ -110,11 +110,10 @@ services:
     networks:
       - kong-net
     restart: on-failure
-    links:
-      - kong-database
     depends_on:
       - kong
       - kong-database
+      
 
   #######################################
   # Konga: Kong GUI
@@ -127,17 +126,18 @@ services:
     environment:
       DB_ADAPTER: postgres
       DB_HOST: kong-database
-      DB_PORT: 5432
       DB_USER: kong
       DB_DATABASE: konga
       DB_PASSWORD: kong
-      KONG_ADMIN_URL: http://kong:8001
+      NODE_ENV: production
     depends_on:
       - kong
       - konga-prepare
       - kong-database
+      
     ports:
       - "1337:1337"
 volumes:
   mongodb:
+
 

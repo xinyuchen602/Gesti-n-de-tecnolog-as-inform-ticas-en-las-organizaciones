@@ -1,14 +1,11 @@
 import { MongoClient } from "mongodb";
-if (!process.env.MONGODB_HOST) throw new Error('Invalid/Missing environment variable: "MONGODB_HOST"');
-const host = process.env.MONGODB_HOST;
-if (!process.env.MONGODB_DB) throw new Error('Invalid/Missing environment variable: "MONGODB_DB"');
-const db = process.env.MONGODB_DB;
+
 
 let cached: MongoClient;
 
 async function connectToDatabase() {
   if (!cached) {
-    const client = new MongoClient(host as string);
+    const client = await MongoClient.connect("mongodb://admin:admin@gestion-de-tecnologias-informaticas-en-las-organizaciones-db-1:27017/");
     try {
       await client.connect();
       cached = client;
@@ -23,5 +20,5 @@ async function connectToDatabase() {
 
 export async function getDB() {
   const client = await connectToDatabase();
-  return client.db(db);
+  return client.db('gestecord');
 }

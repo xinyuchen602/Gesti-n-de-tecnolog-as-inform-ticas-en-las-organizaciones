@@ -35,3 +35,825 @@ stack traceback:
 2024/03/16 11:31:37 [notice] 1279#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
 2024/03/16 11:31:37 [notice] 1279#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
 2024/03/16 11:32:36 [error] 1279#0: *10289 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.16.1, server: kong, request: "GET /api/hello HTTP/1.1", upstream: "http://172.18.176.1:8080/api/hello", host: "localhost:8000", request_id: "564f5b731cfabf34692e623bf2fe5c09"
+2024/03/17 20:53:32 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 20:53:35 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 20:53:39 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: temporary failure in name resolution
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 20:53:49 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: temporary failure in name resolution
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 20:54:00 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: temporary failure in name resolution
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:01:31 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:01:34 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: No route to host
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:06:34 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:06:37 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:06:40 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:10:43 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:10:46 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: Database needs bootstrapping or is older than Kong 1.0.
+
+To start a new installation from scratch, run 'kong migrations bootstrap'.
+
+To migrate from a version older than 1.0, migrated to Kong 1.5.0 first. 
+If you still have 'apis' entities, you can convert them to Routes and Services
+using the 'kong migrations migrate-apis' command in Kong 1.5.0.
+
+
+stack traceback:
+	[C]: in function 'error'
+	/usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: in function 'check_state'
+	/usr/local/share/lua/5.1/kong/init.lua:663: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:10:48 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:20: New migrations available; run 'kong migrations up' to proceed
+stack traceback:
+	[C]: in function 'error'
+	/usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:20: in function 'check_state'
+	/usr/local/share/lua/5.1/kong/init.lua:663: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:10:49 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: ec0d5cf3-c952-4480-a894-303b56bfedeb
+2024/03/17 21:10:49 [notice] 1#0: using the "epoll" event method
+2024/03/17 21:10:49 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 21:10:49 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/17 21:10:49 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 21:10:49 [notice] 1#0: start worker processes
+2024/03/17 21:10:49 [notice] 1#0: start worker process 1321
+2024/03/17 21:10:49 [notice] 1#0: start worker process 1322
+2024/03/17 21:10:49 [notice] 1#0: start worker process 1323
+2024/03/17 21:10:49 [notice] 1#0: start worker process 1324
+2024/03/17 21:10:49 [notice] 1#0: start worker process 1325
+2024/03/17 21:10:49 [notice] 1#0: start worker process 1326
+2024/03/17 21:10:49 [notice] 1#0: start worker process 1327
+2024/03/17 21:10:49 [notice] 1#0: start worker process 1328
+2024/03/17 21:10:50 [notice] 1321#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 21:10:50 [notice] 1321#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/17 21:15:07 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 3fd1475c-fcfe-40f0-bfb7-c122bfcfd1be
+2024/03/17 21:15:07 [notice] 1#0: using the "epoll" event method
+2024/03/17 21:15:07 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 21:15:07 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/17 21:15:07 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 21:15:07 [notice] 1#0: start worker processes
+2024/03/17 21:15:07 [notice] 1#0: start worker process 1320
+2024/03/17 21:15:07 [notice] 1#0: start worker process 1321
+2024/03/17 21:15:07 [notice] 1#0: start worker process 1322
+2024/03/17 21:15:07 [notice] 1#0: start worker process 1323
+2024/03/17 21:15:07 [notice] 1#0: start worker process 1324
+2024/03/17 21:15:07 [notice] 1#0: start worker process 1325
+2024/03/17 21:15:07 [notice] 1#0: start worker process 1326
+2024/03/17 21:15:07 [notice] 1#0: start worker process 1327
+2024/03/17 21:15:08 [notice] 1320#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 21:15:08 [notice] 1320#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/17 21:19:35 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 7bcb4702-b25a-4eda-9cf9-11a8abcc5b1f
+2024/03/17 21:19:35 [notice] 1#0: using the "epoll" event method
+2024/03/17 21:19:35 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 21:19:35 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/17 21:19:35 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 21:19:35 [notice] 1#0: start worker processes
+2024/03/17 21:19:35 [notice] 1#0: start worker process 1320
+2024/03/17 21:19:35 [notice] 1#0: start worker process 1321
+2024/03/17 21:19:35 [notice] 1#0: start worker process 1322
+2024/03/17 21:19:35 [notice] 1#0: start worker process 1323
+2024/03/17 21:19:35 [notice] 1#0: start worker process 1324
+2024/03/17 21:19:35 [notice] 1#0: start worker process 1325
+2024/03/17 21:19:35 [notice] 1#0: start worker process 1326
+2024/03/17 21:19:35 [notice] 1#0: start worker process 1327
+2024/03/17 21:19:35 [notice] 1320#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 21:19:35 [notice] 1320#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/17 21:26:16 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: no pg_hba.conf entry for host "192.168.32.6", user "kong", database "kong", SSL off
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:26:19 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: no pg_hba.conf entry for host "192.168.32.6", user "kong", database "kong", SSL off
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:26:21 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: no pg_hba.conf entry for host "192.168.32.6", user "kong", database "kong", SSL off
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:26:22 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: no pg_hba.conf entry for host "192.168.32.5", user "kong", database "kong", SSL off
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:26:24 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: no pg_hba.conf entry for host "192.168.32.5", user "kong", database "kong", SSL off
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:26:27 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: no pg_hba.conf entry for host "192.168.32.7", user "kong", database "kong", SSL off
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:27:36 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:27:38 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:27:40 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:27:42 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:27:44 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:28:03 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 5143d482-0a63-4c28-969f-2fb29a5ea3fc
+2024/03/17 21:28:03 [notice] 1#0: using the "epoll" event method
+2024/03/17 21:28:03 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 21:28:03 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/17 21:28:03 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 21:28:03 [notice] 1#0: start worker processes
+2024/03/17 21:28:03 [notice] 1#0: start worker process 1320
+2024/03/17 21:28:03 [notice] 1#0: start worker process 1321
+2024/03/17 21:28:03 [notice] 1#0: start worker process 1322
+2024/03/17 21:28:03 [notice] 1#0: start worker process 1323
+2024/03/17 21:28:03 [notice] 1#0: start worker process 1324
+2024/03/17 21:28:03 [notice] 1#0: start worker process 1325
+2024/03/17 21:28:03 [notice] 1#0: start worker process 1326
+2024/03/17 21:28:03 [notice] 1#0: start worker process 1327
+2024/03/17 21:28:04 [notice] 1320#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 21:28:04 [notice] 1320#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/17 21:29:47 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: b7252265-9642-448c-b6c5-08fee2d8bb62
+2024/03/17 21:29:47 [notice] 1#0: using the "epoll" event method
+2024/03/17 21:29:47 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 21:29:47 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/17 21:29:47 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 21:29:47 [notice] 1#0: start worker processes
+2024/03/17 21:29:47 [notice] 1#0: start worker process 1320
+2024/03/17 21:29:47 [notice] 1#0: start worker process 1321
+2024/03/17 21:29:47 [notice] 1#0: start worker process 1322
+2024/03/17 21:29:47 [notice] 1#0: start worker process 1323
+2024/03/17 21:29:47 [notice] 1#0: start worker process 1324
+2024/03/17 21:29:47 [notice] 1#0: start worker process 1325
+2024/03/17 21:29:47 [notice] 1#0: start worker process 1326
+2024/03/17 21:29:47 [notice] 1#0: start worker process 1327
+2024/03/17 21:29:48 [notice] 1320#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 21:29:48 [notice] 1320#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/17 21:30:47 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 5c6b358f-3466-4b0d-97ee-2999510033f6
+2024/03/17 21:30:47 [notice] 1#0: using the "epoll" event method
+2024/03/17 21:30:47 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 21:30:47 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/17 21:30:47 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 21:30:47 [notice] 1#0: start worker processes
+2024/03/17 21:30:47 [notice] 1#0: start worker process 1319
+2024/03/17 21:30:47 [notice] 1#0: start worker process 1320
+2024/03/17 21:30:47 [notice] 1#0: start worker process 1321
+2024/03/17 21:30:47 [notice] 1#0: start worker process 1322
+2024/03/17 21:30:47 [notice] 1#0: start worker process 1323
+2024/03/17 21:30:47 [notice] 1#0: start worker process 1324
+2024/03/17 21:30:47 [notice] 1#0: start worker process 1325
+2024/03/17 21:30:47 [notice] 1#0: start worker process 1326
+2024/03/17 21:30:47 [notice] 1319#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 21:30:47 [notice] 1319#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/17 21:33:53 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: Database needs bootstrapping or is older than Kong 1.0.
+
+To start a new installation from scratch, run 'kong migrations bootstrap'.
+
+To migrate from a version older than 1.0, migrated to Kong 1.5.0 first. 
+If you still have 'apis' entities, you can convert them to Routes and Services
+using the 'kong migrations migrate-apis' command in Kong 1.5.0.
+
+
+stack traceback:
+	[C]: in function 'error'
+	/usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: in function 'check_state'
+	/usr/local/share/lua/5.1/kong/init.lua:663: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:33:55 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: Database needs bootstrapping or is older than Kong 1.0.
+
+To start a new installation from scratch, run 'kong migrations bootstrap'.
+
+To migrate from a version older than 1.0, migrated to Kong 1.5.0 first. 
+If you still have 'apis' entities, you can convert them to Routes and Services
+using the 'kong migrations migrate-apis' command in Kong 1.5.0.
+
+
+stack traceback:
+	[C]: in function 'error'
+	/usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: in function 'check_state'
+	/usr/local/share/lua/5.1/kong/init.lua:663: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:34:12 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:35:35 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:35:37 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:35:40 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: connection refused
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:37:17 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:37:19 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:38:57 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:39:00 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:39:02 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: Database needs bootstrapping or is older than Kong 1.0.
+
+To start a new installation from scratch, run 'kong migrations bootstrap'.
+
+To migrate from a version older than 1.0, migrated to Kong 1.5.0 first. 
+If you still have 'apis' entities, you can convert them to Routes and Services
+using the 'kong migrations migrate-apis' command in Kong 1.5.0.
+
+
+stack traceback:
+	[C]: in function 'error'
+	/usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: in function 'check_state'
+	/usr/local/share/lua/5.1/kong/init.lua:663: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:41:05 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:41:07 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:41:09 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: Database needs bootstrapping or is older than Kong 1.0.
+
+To start a new installation from scratch, run 'kong migrations bootstrap'.
+
+To migrate from a version older than 1.0, migrated to Kong 1.5.0 first. 
+If you still have 'apis' entities, you can convert them to Routes and Services
+using the 'kong migrations migrate-apis' command in Kong 1.5.0.
+
+
+stack traceback:
+	[C]: in function 'error'
+	/usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: in function 'check_state'
+	/usr/local/share/lua/5.1/kong/init.lua:663: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:41:11 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: Database needs bootstrapping or is older than Kong 1.0.
+
+To start a new installation from scratch, run 'kong migrations bootstrap'.
+
+To migrate from a version older than 1.0, migrated to Kong 1.5.0 first. 
+If you still have 'apis' entities, you can convert them to Routes and Services
+using the 'kong migrations migrate-apis' command in Kong 1.5.0.
+
+
+stack traceback:
+	[C]: in function 'error'
+	/usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: in function 'check_state'
+	/usr/local/share/lua/5.1/kong/init.lua:663: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:41:13 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: Database needs bootstrapping or is older than Kong 1.0.
+
+To start a new installation from scratch, run 'kong migrations bootstrap'.
+
+To migrate from a version older than 1.0, migrated to Kong 1.5.0 first. 
+If you still have 'apis' entities, you can convert them to Routes and Services
+using the 'kong migrations migrate-apis' command in Kong 1.5.0.
+
+
+stack traceback:
+	[C]: in function 'error'
+	/usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: in function 'check_state'
+	/usr/local/share/lua/5.1/kong/init.lua:663: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:41:16 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: Database needs bootstrapping or is older than Kong 1.0.
+
+To start a new installation from scratch, run 'kong migrations bootstrap'.
+
+To migrate from a version older than 1.0, migrated to Kong 1.5.0 first. 
+If you still have 'apis' entities, you can convert them to Routes and Services
+using the 'kong migrations migrate-apis' command in Kong 1.5.0.
+
+
+stack traceback:
+	[C]: in function 'error'
+	/usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: in function 'check_state'
+	/usr/local/share/lua/5.1/kong/init.lua:663: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:41:20 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 5edef902-4038-4e4e-a6fc-4c0487f623b8
+2024/03/17 21:41:20 [notice] 1#0: using the "epoll" event method
+2024/03/17 21:41:20 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 21:41:20 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/17 21:41:20 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 21:41:20 [notice] 1#0: start worker processes
+2024/03/17 21:41:20 [notice] 1#0: start worker process 1321
+2024/03/17 21:41:20 [notice] 1#0: start worker process 1322
+2024/03/17 21:41:20 [notice] 1#0: start worker process 1323
+2024/03/17 21:41:20 [notice] 1#0: start worker process 1324
+2024/03/17 21:41:20 [notice] 1#0: start worker process 1325
+2024/03/17 21:41:20 [notice] 1#0: start worker process 1326
+2024/03/17 21:41:20 [notice] 1#0: start worker process 1327
+2024/03/17 21:41:20 [notice] 1#0: start worker process 1328
+2024/03/17 21:41:21 [notice] 1321#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 21:41:21 [notice] 1321#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/17 21:51:55 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:51:57 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:51:59 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/17 21:52:01 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 259dba92-7cf1-4ac6-8551-6937482e0685
+2024/03/17 21:52:01 [notice] 1#0: using the "epoll" event method
+2024/03/17 21:52:01 [notice] 1#0: openresty/1.25.3.1
+2024/03/17 21:52:01 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/17 21:52:01 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/17 21:52:01 [notice] 1#0: start worker processes
+2024/03/17 21:52:01 [notice] 1#0: start worker process 1321
+2024/03/17 21:52:01 [notice] 1#0: start worker process 1322
+2024/03/17 21:52:01 [notice] 1#0: start worker process 1323
+2024/03/17 21:52:01 [notice] 1#0: start worker process 1324
+2024/03/17 21:52:01 [notice] 1#0: start worker process 1325
+2024/03/17 21:52:01 [notice] 1#0: start worker process 1326
+2024/03/17 21:52:01 [notice] 1#0: start worker process 1327
+2024/03/17 21:52:01 [notice] 1#0: start worker process 1328
+2024/03/17 21:52:02 [notice] 1321#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/17 21:52:02 [notice] 1321#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 19:36:04 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/18 19:36:07 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/18 19:36:09 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/init.lua:656: [PostgreSQL error] failed to retrieve PostgreSQL server_version_num: FATAL: the database system is starting up
+stack traceback:
+	[C]: in function 'assert'
+	/usr/local/share/lua/5.1/kong/init.lua:656: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/18 19:36:11 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 398153f4-2ee8-4f3d-bc7b-bfabb3b38881
+2024/03/18 19:36:11 [notice] 1#0: using the "epoll" event method
+2024/03/18 19:36:11 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 19:36:11 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 19:36:11 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 19:36:11 [notice] 1#0: start worker processes
+2024/03/18 19:36:11 [notice] 1#0: start worker process 1322
+2024/03/18 19:36:11 [notice] 1#0: start worker process 1323
+2024/03/18 19:36:11 [notice] 1#0: start worker process 1324
+2024/03/18 19:36:11 [notice] 1#0: start worker process 1325
+2024/03/18 19:36:11 [notice] 1#0: start worker process 1326
+2024/03/18 19:36:11 [notice] 1#0: start worker process 1327
+2024/03/18 19:36:11 [notice] 1#0: start worker process 1328
+2024/03/18 19:36:11 [notice] 1#0: start worker process 1329
+2024/03/18 19:36:12 [notice] 1322#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 19:36:12 [notice] 1322#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 20:05:23 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: ae629e2d-80a7-4625-b727-2aa72b5c095b
+2024/03/18 20:05:23 [notice] 1#0: using the "epoll" event method
+2024/03/18 20:05:23 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 20:05:23 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 20:05:23 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 20:05:23 [notice] 1#0: start worker processes
+2024/03/18 20:05:23 [notice] 1#0: start worker process 1321
+2024/03/18 20:05:23 [notice] 1#0: start worker process 1322
+2024/03/18 20:05:23 [notice] 1#0: start worker process 1323
+2024/03/18 20:05:23 [notice] 1#0: start worker process 1324
+2024/03/18 20:05:23 [notice] 1#0: start worker process 1325
+2024/03/18 20:05:23 [notice] 1#0: start worker process 1326
+2024/03/18 20:05:23 [notice] 1#0: start worker process 1327
+2024/03/18 20:05:23 [notice] 1#0: start worker process 1328
+2024/03/18 20:05:26 [notice] 1321#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 20:05:26 [notice] 1321#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 20:11:53 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 30c7074d-8625-4c94-a4a3-f6e14e103bc6
+2024/03/18 20:11:53 [notice] 1#0: using the "epoll" event method
+2024/03/18 20:11:53 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 20:11:53 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 20:11:53 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 20:11:53 [notice] 1#0: start worker processes
+2024/03/18 20:11:53 [notice] 1#0: start worker process 1319
+2024/03/18 20:11:53 [notice] 1#0: start worker process 1320
+2024/03/18 20:11:53 [notice] 1#0: start worker process 1321
+2024/03/18 20:11:53 [notice] 1#0: start worker process 1322
+2024/03/18 20:11:53 [notice] 1#0: start worker process 1323
+2024/03/18 20:11:53 [notice] 1#0: start worker process 1324
+2024/03/18 20:11:53 [notice] 1#0: start worker process 1325
+2024/03/18 20:11:53 [notice] 1#0: start worker process 1326
+2024/03/18 20:11:56 [notice] 1319#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 20:11:56 [notice] 1319#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 20:18:22 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: e9b80aef-6433-4c79-a0ef-ed9b741b35c7
+2024/03/18 20:18:22 [notice] 1#0: using the "epoll" event method
+2024/03/18 20:18:22 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 20:18:22 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 20:18:22 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 20:18:22 [notice] 1#0: start worker processes
+2024/03/18 20:18:22 [notice] 1#0: start worker process 1326
+2024/03/18 20:18:22 [notice] 1#0: start worker process 1327
+2024/03/18 20:18:22 [notice] 1#0: start worker process 1328
+2024/03/18 20:18:22 [notice] 1#0: start worker process 1329
+2024/03/18 20:18:22 [notice] 1#0: start worker process 1330
+2024/03/18 20:18:22 [notice] 1#0: start worker process 1331
+2024/03/18 20:18:22 [notice] 1#0: start worker process 1332
+2024/03/18 20:18:22 [notice] 1#0: start worker process 1333
+2024/03/18 20:18:26 [notice] 1326#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 20:18:26 [notice] 1326#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 20:32:34 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: cf2354cd-15dd-4869-af2f-c3e80544f2d5
+2024/03/18 20:32:34 [notice] 1#0: using the "epoll" event method
+2024/03/18 20:32:34 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 20:32:34 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 20:32:34 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 20:32:34 [notice] 1#0: start worker processes
+2024/03/18 20:32:34 [notice] 1#0: start worker process 1324
+2024/03/18 20:32:34 [notice] 1#0: start worker process 1325
+2024/03/18 20:32:34 [notice] 1#0: start worker process 1326
+2024/03/18 20:32:34 [notice] 1#0: start worker process 1327
+2024/03/18 20:32:34 [notice] 1#0: start worker process 1328
+2024/03/18 20:32:34 [notice] 1#0: start worker process 1329
+2024/03/18 20:32:34 [notice] 1#0: start worker process 1330
+2024/03/18 20:32:34 [notice] 1#0: start worker process 1331
+2024/03/18 20:32:38 [notice] 1324#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 20:32:38 [notice] 1324#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 20:38:39 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 8b04bd94-28fe-49f2-a825-975623222ca3
+2024/03/18 20:38:39 [notice] 1#0: using the "epoll" event method
+2024/03/18 20:38:39 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 20:38:39 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 20:38:39 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 20:38:39 [notice] 1#0: start worker processes
+2024/03/18 20:38:39 [notice] 1#0: start worker process 1326
+2024/03/18 20:38:39 [notice] 1#0: start worker process 1327
+2024/03/18 20:38:39 [notice] 1#0: start worker process 1328
+2024/03/18 20:38:39 [notice] 1#0: start worker process 1329
+2024/03/18 20:38:39 [notice] 1#0: start worker process 1330
+2024/03/18 20:38:39 [notice] 1#0: start worker process 1331
+2024/03/18 20:38:39 [notice] 1#0: start worker process 1332
+2024/03/18 20:38:39 [notice] 1#0: start worker process 1333
+2024/03/18 20:38:46 [notice] 1326#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 20:38:46 [notice] 1326#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 20:40:40 [error] 1326#0: *5174 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.25.0.1, server: kong, request: "GET /api/votes HTTP/1.1", host: "localhost:8000", request_id: "d5abbb55efc2aa0ace734e2d07b6070e"
+2024/03/18 20:41:08 [error] 1326#0: *5176 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.25.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "f633291cd56a02306ed56410ee1fff71"
+2024/03/18 20:41:12 [error] 1326#0: *5178 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.25.0.1, server: kong, request: "GET /api/votes HTTP/1.1", host: "localhost:8000", request_id: "2f95056a68afc428f104c71db7273f6c"
+2024/03/18 20:55:48 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 2535e3e6-f76a-4201-8681-ae17a2bae338
+2024/03/18 20:55:48 [notice] 1#0: using the "epoll" event method
+2024/03/18 20:55:48 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 20:55:48 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 20:55:48 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 20:55:48 [notice] 1#0: start worker processes
+2024/03/18 20:55:48 [notice] 1#0: start worker process 1321
+2024/03/18 20:55:48 [notice] 1#0: start worker process 1322
+2024/03/18 20:55:48 [notice] 1#0: start worker process 1323
+2024/03/18 20:55:48 [notice] 1#0: start worker process 1324
+2024/03/18 20:55:48 [notice] 1#0: start worker process 1325
+2024/03/18 20:55:48 [notice] 1#0: start worker process 1326
+2024/03/18 20:55:48 [notice] 1#0: start worker process 1327
+2024/03/18 20:55:48 [notice] 1#0: start worker process 1328
+2024/03/18 20:55:49 [notice] 1321#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 20:55:49 [notice] 1321#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 21:03:02 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 72f705e8-4da5-454e-ba01-54f4a15714e4
+2024/03/18 21:03:02 [notice] 1#0: using the "epoll" event method
+2024/03/18 21:03:02 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 21:03:02 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 21:03:02 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 21:03:02 [notice] 1#0: start worker processes
+2024/03/18 21:03:02 [notice] 1#0: start worker process 1320
+2024/03/18 21:03:02 [notice] 1#0: start worker process 1321
+2024/03/18 21:03:02 [notice] 1#0: start worker process 1322
+2024/03/18 21:03:02 [notice] 1#0: start worker process 1323
+2024/03/18 21:03:02 [notice] 1#0: start worker process 1324
+2024/03/18 21:03:02 [notice] 1#0: start worker process 1325
+2024/03/18 21:03:02 [notice] 1#0: start worker process 1326
+2024/03/18 21:03:02 [notice] 1#0: start worker process 1327
+2024/03/18 21:03:03 [notice] 1320#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 21:03:03 [notice] 1320#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 21:05:31 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: de4f4052-9099-4ba0-8029-60515f5df9bb
+2024/03/18 21:05:31 [notice] 1#0: using the "epoll" event method
+2024/03/18 21:05:31 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 21:05:31 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 21:05:31 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 21:05:31 [notice] 1#0: start worker processes
+2024/03/18 21:05:31 [notice] 1#0: start worker process 1319
+2024/03/18 21:05:31 [notice] 1#0: start worker process 1320
+2024/03/18 21:05:31 [notice] 1#0: start worker process 1321
+2024/03/18 21:05:31 [notice] 1#0: start worker process 1322
+2024/03/18 21:05:31 [notice] 1#0: start worker process 1323
+2024/03/18 21:05:31 [notice] 1#0: start worker process 1324
+2024/03/18 21:05:31 [notice] 1#0: start worker process 1325
+2024/03/18 21:05:31 [notice] 1#0: start worker process 1326
+2024/03/18 21:05:34 [notice] 1319#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 21:05:34 [notice] 1319#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 21:09:51 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 53dd7598-3197-40fa-8f4b-2e684d2ff2f7
+2024/03/18 21:09:51 [notice] 1#0: using the "epoll" event method
+2024/03/18 21:09:51 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 21:09:51 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 21:09:51 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 21:09:51 [notice] 1#0: start worker processes
+2024/03/18 21:09:51 [notice] 1#0: start worker process 1320
+2024/03/18 21:09:51 [notice] 1#0: start worker process 1321
+2024/03/18 21:09:51 [notice] 1#0: start worker process 1322
+2024/03/18 21:09:51 [notice] 1#0: start worker process 1323
+2024/03/18 21:09:51 [notice] 1#0: start worker process 1324
+2024/03/18 21:09:51 [notice] 1#0: start worker process 1325
+2024/03/18 21:09:51 [notice] 1#0: start worker process 1326
+2024/03/18 21:09:51 [notice] 1#0: start worker process 1327
+2024/03/18 21:09:53 [notice] 1320#0: *2 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 21:09:53 [notice] 1320#0: *2 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 21:15:19 [error] 1321#0: *5202 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.29.0.1, server: kong, request: "POST /api/votes/65f8a958162e61c79de7732d HTTP/1.1", host: "localhost:8000", request_id: "2aad0d163e7ae0326e66e8298a74c745"
+2024/03/18 21:15:36 [error] 1321#0: *5202 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.29.0.1, server: kong, request: "POST /api/votes/65f8a958162e61c79de7732d HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes/65f8a958162e61c79de7732d", host: "localhost:8000", request_id: "ad80156992dc8f4d97a12e0abe602775"
+2024/03/18 21:16:31 [error] 1320#0: *5205 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.29.0.1, server: kong, request: "GET /api/votes HTTP/1.1", host: "172.18.176.1:8000", request_id: "c8c9e93282673408eba6ac7eae1bc877"
+2024/03/18 21:16:40 [error] 1320#0: *5205 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.29.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "172.18.176.1:8000", request_id: "d605f5665b348d519533031b1c9c9118"
+2024/03/18 21:22:19 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 421c798e-0cdb-462e-94c9-0e4a824fa6a4
+2024/03/18 21:22:19 [notice] 1#0: using the "epoll" event method
+2024/03/18 21:22:19 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 21:22:19 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 21:22:19 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 21:22:19 [notice] 1#0: start worker processes
+2024/03/18 21:22:19 [notice] 1#0: start worker process 1320
+2024/03/18 21:22:19 [notice] 1#0: start worker process 1321
+2024/03/18 21:22:19 [notice] 1#0: start worker process 1322
+2024/03/18 21:22:19 [notice] 1#0: start worker process 1323
+2024/03/18 21:22:19 [notice] 1#0: start worker process 1324
+2024/03/18 21:22:19 [notice] 1#0: start worker process 1325
+2024/03/18 21:22:19 [notice] 1#0: start worker process 1326
+2024/03/18 21:22:19 [notice] 1#0: start worker process 1327
+2024/03/18 21:22:22 [notice] 1320#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 21:22:22 [notice] 1320#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 21:27:08 [error] 1320#0: *5188 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.30.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "1fbfae0d84bfaf4cf9d3ec40f9969c77"
+2024/03/18 21:27:18 [error] 1320#0: *5188 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.30.0.1, server: kong, request: "POST /api/votes/65f8a958162e61c79de7732d HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes/65f8a958162e61c79de7732d", host: "localhost:8000", request_id: "edd2a96ecbf24317d66bbb698b85451d"
+2024/03/18 21:27:20 [error] 1320#0: *5188 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.30.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "1526bb25bbb7f444a268cc1872150001"
+2024/03/18 21:28:50 [error] 1320#0: *5203 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.30.0.1, server: kong, request: "POST /api/contestants HTTP/1.1", host: "172.18.176.1:8000", request_id: "593b313bcc21632e1ea26e19791f3121"
+2024/03/18 21:28:54 [error] 1320#0: *5203 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.30.0.1, server: kong, request: "POST /api/contestants HTTP/1.1", upstream: "http://172.18.176.1:8080/api/contestants", host: "172.18.176.1:8000", request_id: "e38a7d5b95b62b538fd818272ec2fe4c"
+2024/03/18 21:28:57 [error] 1320#0: *5207 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.30.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "a3a98424b0bdb37f9c24f11f9bf2390f"
+2024/03/18 21:29:13 [error] 1320#0: *5207 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.30.0.1, server: kong, request: "POST /api/votes/65f8a958162e61c79de7732d HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes/65f8a958162e61c79de7732d", host: "localhost:8000", request_id: "5bd85002f7bae0625c8ae9327ada2760"
+2024/03/18 21:29:25 [error] 1320#0: *5203 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.30.0.1, server: kong, request: "POST /api/votes/65f8a950162e61c79de7732c HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes/65f8a950162e61c79de7732c", host: "172.18.176.1:8000", request_id: "c6d8b55abe36f208193f8926e5976468"
+2024/03/18 21:29:44 [error] 1320#0: *5203 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.30.0.1, server: kong, request: "POST /api/contestants HTTP/1.1", upstream: "http://172.18.176.1:8080/api/contestants", host: "172.18.176.1:8000", request_id: "43f6a15512137667de2e016030c94b44"
+2024/03/18 21:29:46 [error] 1320#0: *5207 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.30.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "de05ba7eb49abc49bb4e9161f32b7524"
+2024/03/18 21:29:59 [error] 1320#0: *5203 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.30.0.1, server: kong, request: "POST /api/votes/65f8b2169193d7009bd1ae99 HTTP/1.1", host: "172.18.176.1:8000", request_id: "6f52b10e5db75d7a65417525c88de249"
+2024/03/18 21:30:01 [error] 1320#0: *5203 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.30.0.1, server: kong, request: "POST /api/votes/65f8b2169193d7009bd1ae99 HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes/65f8b2169193d7009bd1ae99", host: "172.18.176.1:8000", request_id: "29d9c02883e3e33e41ad136b0c643e04"
+2024/03/18 21:30:03 [error] 1320#0: *5207 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.30.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "189a0f12d0852c123a263d51bc439436"
+2024/03/18 21:35:48 [error] 1320#0: *5275 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.30.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "446bf16667b35218b1b2cc3c1271003b"
+2024/03/18 21:35:54 [error] 1320#0: *5275 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.30.0.1, server: kong, request: "GET /api/votes HTTP/1.1", host: "localhost:8000", request_id: "1b740a1107a92531a64fc5698d6bb412"
+2024/03/18 21:35:58 [error] 1320#0: *5275 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.30.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "77de074c1fc6ee004259006af926604e"
+2024/03/18 21:37:22 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: da8f35af-15ea-413a-aaf1-8953188b7472
+2024/03/18 21:37:22 [notice] 1#0: using the "epoll" event method
+2024/03/18 21:37:22 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 21:37:22 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 21:37:22 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 21:37:22 [notice] 1#0: start worker processes
+2024/03/18 21:37:22 [notice] 1#0: start worker process 1326
+2024/03/18 21:37:22 [notice] 1#0: start worker process 1327
+2024/03/18 21:37:22 [notice] 1#0: start worker process 1328
+2024/03/18 21:37:22 [notice] 1#0: start worker process 1329
+2024/03/18 21:37:22 [notice] 1#0: start worker process 1330
+2024/03/18 21:37:22 [notice] 1#0: start worker process 1331
+2024/03/18 21:37:22 [notice] 1#0: start worker process 1332
+2024/03/18 21:37:22 [notice] 1#0: start worker process 1333
+2024/03/18 21:37:29 [notice] 1326#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 21:37:29 [notice] 1326#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 21:41:09 [error] 1326#0: *5178 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.31.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "e6114830924f4033e73db94d7095664d"
+2024/03/18 21:41:47 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 95ddd44f-572b-41b6-aa84-2c2906d51ca1
+2024/03/18 21:41:47 [notice] 1#0: using the "epoll" event method
+2024/03/18 21:41:47 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 21:41:47 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 21:41:47 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 21:41:47 [notice] 1#0: start worker processes
+2024/03/18 21:41:47 [notice] 1#0: start worker process 1320
+2024/03/18 21:41:47 [notice] 1#0: start worker process 1321
+2024/03/18 21:41:47 [notice] 1#0: start worker process 1322
+2024/03/18 21:41:47 [notice] 1#0: start worker process 1323
+2024/03/18 21:41:47 [notice] 1#0: start worker process 1324
+2024/03/18 21:41:47 [notice] 1#0: start worker process 1325
+2024/03/18 21:41:47 [notice] 1#0: start worker process 1326
+2024/03/18 21:41:47 [notice] 1#0: start worker process 1327
+2024/03/18 21:41:48 [notice] 1320#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 21:41:48 [notice] 1320#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 21:43:24 [error] 1320#0: *5173 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.0.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "fabe050ed16487505fb8a7408d100151"
+2024/03/18 21:45:51 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 74b6f367-c53c-4e02-a001-4f139732a28b
+2024/03/18 21:45:51 [notice] 1#0: using the "epoll" event method
+2024/03/18 21:45:51 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 21:45:51 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 21:45:51 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 21:45:51 [notice] 1#0: start worker processes
+2024/03/18 21:45:51 [notice] 1#0: start worker process 1320
+2024/03/18 21:45:51 [notice] 1#0: start worker process 1321
+2024/03/18 21:45:51 [notice] 1#0: start worker process 1322
+2024/03/18 21:45:51 [notice] 1#0: start worker process 1323
+2024/03/18 21:45:51 [notice] 1#0: start worker process 1324
+2024/03/18 21:45:51 [notice] 1#0: start worker process 1325
+2024/03/18 21:45:51 [notice] 1#0: start worker process 1326
+2024/03/18 21:45:51 [notice] 1#0: start worker process 1327
+2024/03/18 21:45:54 [notice] 1320#0: *2 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 21:45:54 [notice] 1320#0: *2 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 21:46:34 [error] 1320#0: *5173 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.16.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "abefc44e9fcd38474058f22659a0af6e"
+2024/03/18 21:47:59 [error] 1320#0: *5179 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.16.1, server: kong, request: "GET /api/votes HTTP/1.1", host: "localhost:8000", request_id: "5d6df565ae3e0f799c4f797c63cae206"
+2024/03/18 21:48:00 [error] 1320#0: *5180 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.16.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "5e3246103a4761439e20801a77460b76"
+2024/03/18 21:49:59 [error] 1320#0: *5202 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.16.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "df9b776dca3ede312c705539995a240b"
+2024/03/18 21:53:33 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 3744c8a0-e6c5-42a3-ad4e-65e95c3ac3bf
+2024/03/18 21:53:33 [notice] 1#0: using the "epoll" event method
+2024/03/18 21:53:33 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 21:53:33 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 21:53:33 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 21:53:33 [notice] 1#0: start worker processes
+2024/03/18 21:53:33 [notice] 1#0: start worker process 1320
+2024/03/18 21:53:33 [notice] 1#0: start worker process 1321
+2024/03/18 21:53:33 [notice] 1#0: start worker process 1322
+2024/03/18 21:53:33 [notice] 1#0: start worker process 1323
+2024/03/18 21:53:33 [notice] 1#0: start worker process 1324
+2024/03/18 21:53:33 [notice] 1#0: start worker process 1325
+2024/03/18 21:53:33 [notice] 1#0: start worker process 1326
+2024/03/18 21:53:33 [notice] 1#0: start worker process 1327
+2024/03/18 21:53:36 [notice] 1320#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 21:53:36 [notice] 1320#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 21:54:09 [error] 1321#0: *5171 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.32.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "6bcd386dadfe180395735007ab290e4c"
+2024/03/18 21:56:24 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 1c856163-8515-4487-b0d8-8346c26c163b
+2024/03/18 21:56:24 [notice] 1#0: using the "epoll" event method
+2024/03/18 21:56:24 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 21:56:24 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 21:56:24 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 21:56:24 [notice] 1#0: start worker processes
+2024/03/18 21:56:24 [notice] 1#0: start worker process 1320
+2024/03/18 21:56:24 [notice] 1#0: start worker process 1321
+2024/03/18 21:56:24 [notice] 1#0: start worker process 1322
+2024/03/18 21:56:24 [notice] 1#0: start worker process 1323
+2024/03/18 21:56:24 [notice] 1#0: start worker process 1324
+2024/03/18 21:56:24 [notice] 1#0: start worker process 1325
+2024/03/18 21:56:24 [notice] 1#0: start worker process 1326
+2024/03/18 21:56:24 [notice] 1#0: start worker process 1327
+2024/03/18 21:56:26 [notice] 1320#0: *4 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 21:56:26 [notice] 1320#0: *4 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 21:58:51 [error] 1320#0: *5179 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.48.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "b5327254ebbfc9620cb1055ee723c25a"
+2024/03/18 21:59:06 [error] 1320#0: *5183 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.48.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "101b7735fbf8281a37507027d1b9093f"
+2024/03/18 22:01:41 [error] 1320#0: *5208 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.48.1, server: kong, request: "GET /api/votes HTTP/1.1", host: "localhost:8000", request_id: "6d804c1d2604160314a10861af3c761e"
+2024/03/18 22:10:14 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 5af9df5f-295f-4a86-844b-63cabbc5cfb9
+2024/03/18 22:10:14 [notice] 1#0: using the "epoll" event method
+2024/03/18 22:10:14 [notice] 1#0: openresty/1.25.3.1
+2024/03/18 22:10:14 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/18 22:10:14 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/18 22:10:14 [notice] 1#0: start worker processes
+2024/03/18 22:10:14 [notice] 1#0: start worker process 1320
+2024/03/18 22:10:14 [notice] 1#0: start worker process 1321
+2024/03/18 22:10:14 [notice] 1#0: start worker process 1322
+2024/03/18 22:10:14 [notice] 1#0: start worker process 1323
+2024/03/18 22:10:14 [notice] 1#0: start worker process 1324
+2024/03/18 22:10:14 [notice] 1#0: start worker process 1325
+2024/03/18 22:10:14 [notice] 1#0: start worker process 1326
+2024/03/18 22:10:14 [notice] 1#0: start worker process 1327
+2024/03/18 22:10:16 [notice] 1320#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/18 22:10:16 [notice] 1320#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/18 22:15:44 [error] 1320#0: *5220 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 192.168.80.1, server: kong, request: "GET /api/votes HTTP/1.1", upstream: "http://172.18.176.1:8080/api/votes", host: "localhost:8000", request_id: "aa1d2e0e193fd90af59c0b6909a46801"
+2024/03/19 14:52:47 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 65a9a15b-c855-47fa-86d3-1a312b0cc3da
+2024/03/19 14:52:47 [notice] 1#0: using the "epoll" event method
+2024/03/19 14:52:47 [notice] 1#0: openresty/1.25.3.1
+2024/03/19 14:52:47 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/19 14:52:47 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/19 14:52:47 [notice] 1#0: start worker processes
+2024/03/19 14:52:47 [notice] 1#0: start worker process 1320
+2024/03/19 14:52:47 [notice] 1#0: start worker process 1321
+2024/03/19 14:52:47 [notice] 1#0: start worker process 1322
+2024/03/19 14:52:47 [notice] 1#0: start worker process 1323
+2024/03/19 14:52:47 [notice] 1#0: start worker process 1324
+2024/03/19 14:52:47 [notice] 1#0: start worker process 1325
+2024/03/19 14:52:47 [notice] 1#0: start worker process 1326
+2024/03/19 14:52:47 [notice] 1#0: start worker process 1327
+2024/03/19 14:52:48 [notice] 1320#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/19 14:52:48 [notice] 1320#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/19 14:54:37 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 8b46d1fc-c28c-4676-82cb-5a6721756cf3
+2024/03/19 14:54:37 [notice] 1#0: using the "epoll" event method
+2024/03/19 14:54:37 [notice] 1#0: openresty/1.25.3.1
+2024/03/19 14:54:37 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/19 14:54:37 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/19 14:54:37 [notice] 1#0: start worker processes
+2024/03/19 14:54:37 [notice] 1#0: start worker process 1320
+2024/03/19 14:54:37 [notice] 1#0: start worker process 1321
+2024/03/19 14:54:37 [notice] 1#0: start worker process 1322
+2024/03/19 14:54:37 [notice] 1#0: start worker process 1323
+2024/03/19 14:54:37 [notice] 1#0: start worker process 1324
+2024/03/19 14:54:37 [notice] 1#0: start worker process 1325
+2024/03/19 14:54:37 [notice] 1#0: start worker process 1326
+2024/03/19 14:54:37 [notice] 1#0: start worker process 1327
+2024/03/19 14:54:38 [notice] 1320#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/19 14:54:38 [notice] 1320#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/19 14:58:38 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: f96bf136-7a44-4680-9795-dde5734836a4
+2024/03/19 14:58:38 [notice] 1#0: using the "epoll" event method
+2024/03/19 14:58:38 [notice] 1#0: openresty/1.25.3.1
+2024/03/19 14:58:38 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/19 14:58:38 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/19 14:58:38 [notice] 1#0: start worker processes
+2024/03/19 14:58:38 [notice] 1#0: start worker process 1327
+2024/03/19 14:58:38 [notice] 1#0: start worker process 1328
+2024/03/19 14:58:38 [notice] 1#0: start worker process 1329
+2024/03/19 14:58:38 [notice] 1#0: start worker process 1330
+2024/03/19 14:58:38 [notice] 1#0: start worker process 1331
+2024/03/19 14:58:38 [notice] 1#0: start worker process 1332
+2024/03/19 14:58:38 [notice] 1#0: start worker process 1333
+2024/03/19 14:58:38 [notice] 1#0: start worker process 1334
+2024/03/19 14:58:45 [notice] 1327#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/19 14:58:45 [notice] 1327#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/19 15:04:02 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 40fc3a0c-2567-4557-88eb-49d010b07dec
+2024/03/19 15:04:02 [notice] 1#0: using the "epoll" event method
+2024/03/19 15:04:02 [notice] 1#0: openresty/1.25.3.1
+2024/03/19 15:04:02 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/19 15:04:02 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/19 15:04:02 [notice] 1#0: start worker processes
+2024/03/19 15:04:02 [notice] 1#0: start worker process 1326
+2024/03/19 15:04:02 [notice] 1#0: start worker process 1327
+2024/03/19 15:04:02 [notice] 1#0: start worker process 1328
+2024/03/19 15:04:02 [notice] 1#0: start worker process 1329
+2024/03/19 15:04:02 [notice] 1#0: start worker process 1330
+2024/03/19 15:04:02 [notice] 1#0: start worker process 1331
+2024/03/19 15:04:02 [notice] 1#0: start worker process 1332
+2024/03/19 15:04:02 [notice] 1#0: start worker process 1333
+2024/03/19 15:04:05 [notice] 1326#0: *2 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/19 15:04:05 [notice] 1326#0: *2 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/19 15:07:22 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 28d3e0ad-f98a-48b7-9afa-b268076a74a7
+2024/03/19 15:07:22 [notice] 1#0: using the "epoll" event method
+2024/03/19 15:07:22 [notice] 1#0: openresty/1.25.3.1
+2024/03/19 15:07:22 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/19 15:07:22 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/19 15:07:22 [notice] 1#0: start worker processes
+2024/03/19 15:07:22 [notice] 1#0: start worker process 1328
+2024/03/19 15:07:22 [notice] 1#0: start worker process 1329
+2024/03/19 15:07:22 [notice] 1#0: start worker process 1330
+2024/03/19 15:07:22 [notice] 1#0: start worker process 1331
+2024/03/19 15:07:22 [notice] 1#0: start worker process 1332
+2024/03/19 15:07:22 [notice] 1#0: start worker process 1333
+2024/03/19 15:07:22 [notice] 1#0: start worker process 1334
+2024/03/19 15:07:22 [notice] 1#0: start worker process 1335
+2024/03/19 15:07:26 [notice] 1328#0: *3 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/19 15:07:26 [notice] 1328#0: *3 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
