@@ -37,7 +37,6 @@ services:
       POSTGRES_USER: kong
       POSTGRES_DB: kong
       POSTGRES_PASSWORD: kong
-    # command: bash -c "./script.sh"
     volumes:
       - ./kong-db:/var/lib/postgresql/data
       - ./kong-db/pg_replslot:/var/lib/postgresql/data/pg_replslot
@@ -48,6 +47,7 @@ services:
       - ./kong-db/pg_stat:/var/lib/postgresql/data/pg_stat
       - ./kong-db/pg_logical/snapshots:/var/lib/postgresql/data/pg_logical/snapshots
       - ./kong-db/pg_logical/mappings:/var/lib/postgresql/data/pg_logical/mappings
+      
     ports:
       - "5432:5432"
     healthcheck:
@@ -120,7 +120,6 @@ services:
       - kong-net
     restart: on-failure
     depends_on:
-      - kong
       - kong-database
       
 
@@ -148,7 +147,6 @@ services:
       - "1337:1337"
 volumes:
   mongodb:
-  kong-db:
-    driver: local
+
 
 
