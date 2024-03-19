@@ -45,6 +45,7 @@ services:
       - ./kong-db/pg_twophase:/var/lib/postgresql/data/pg_twophase
       - ./kong-db/pg_snapshots:/var/lib/postgresql/data/pg_snapshots
       - ./kong-db/pg_commit_ts:/var/lib/postgresql/data/pg_commit_ts
+      - ./kong-db/pg_stat:/var/lib/postgresql/data/pg_stat
       - ./kong-db/pg_logical/snapshots:/var/lib/postgresql/data/pg_logical/snapshots
       - ./kong-db/pg_logical/mappings:/var/lib/postgresql/data/pg_logical/mappings
     ports:
@@ -70,8 +71,7 @@ services:
       - KONG_PG_USER=kong
       - KONG_PG_PASSWORD=kong
     depends_on:
-      kong-database:
-        condition: service_healthy
+      - kong-database
 
   #######################################
   # Kong: The API Gateway
