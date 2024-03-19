@@ -929,3 +929,35 @@ stack traceback:
 2024/03/19 16:02:48 [notice] 1#0: start worker process 1328
 2024/03/19 16:02:49 [notice] 1321#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
 2024/03/19 16:02:49 [notice] 1321#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/19 17:18:49 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 46704472-74e8-4cfd-a223-29de26288923
+2024/03/19 17:18:49 [notice] 1#0: using the "epoll" event method
+2024/03/19 17:18:49 [notice] 1#0: openresty/1.25.3.1
+2024/03/19 17:18:49 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/19 17:18:49 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/19 17:18:49 [notice] 1#0: start worker processes
+2024/03/19 17:18:49 [notice] 1#0: start worker process 1320
+2024/03/19 17:18:49 [notice] 1#0: start worker process 1321
+2024/03/19 17:18:49 [notice] 1#0: start worker process 1322
+2024/03/19 17:18:49 [notice] 1#0: start worker process 1323
+2024/03/19 17:18:49 [notice] 1#0: start worker process 1324
+2024/03/19 17:18:49 [notice] 1#0: start worker process 1325
+2024/03/19 17:18:49 [notice] 1#0: start worker process 1326
+2024/03/19 17:18:49 [notice] 1#0: start worker process 1327
+2024/03/19 17:18:51 [notice] 1320#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/19 17:18:51 [notice] 1320#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/19 17:26:57 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 071edcdb-f377-41d8-8e76-7c74a99a7428
+2024/03/19 17:26:57 [notice] 1#0: using the "epoll" event method
+2024/03/19 17:26:57 [notice] 1#0: openresty/1.25.3.1
+2024/03/19 17:26:57 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/19 17:26:57 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/19 17:26:57 [notice] 1#0: start worker processes
+2024/03/19 17:26:57 [notice] 1#0: start worker process 1320
+2024/03/19 17:26:57 [notice] 1#0: start worker process 1321
+2024/03/19 17:26:57 [notice] 1#0: start worker process 1322
+2024/03/19 17:26:57 [notice] 1#0: start worker process 1323
+2024/03/19 17:26:57 [notice] 1#0: start worker process 1324
+2024/03/19 17:26:57 [notice] 1#0: start worker process 1325
+2024/03/19 17:26:57 [notice] 1#0: start worker process 1326
+2024/03/19 17:26:57 [notice] 1#0: start worker process 1327
+2024/03/19 17:26:59 [notice] 1320#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/19 17:26:59 [notice] 1320#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*

@@ -35,8 +35,16 @@ services:
       POSTGRES_USER: kong
       POSTGRES_DB: kong
       POSTGRES_PASSWORD: kong
+    # command: bash -c "./script.sh"
     volumes:
       - ./kong-db:/var/lib/postgresql/data
+      - ./kong-db/pg_replslot:/var/lib/postgresql/data/pg_replslot
+      - ./kong-db/pg_tblspc:/var/lib/postgresql/data/pg_tblspc
+      - ./kong-db/pg_twophase:/var/lib/postgresql/data/pg_twophase
+      - ./kong-db/pg_snapshots:/var/lib/postgresql/data/pg_snapshots
+      - ./kong-db/pg_commit_ts:/var/lib/postgresql/data/pg_commit_ts
+      - ./kong-db/pg_logical/snapshots:/var/lib/postgresql/data/pg_logical/snapshots
+      - ./kong-db/pg_logical/mappings:/var/lib/postgresql/data/pg_logical/mappings
     ports:
       - "5432:5432"
     healthcheck:
@@ -44,7 +52,6 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
-
   #######################################
   # Kong database migration
   #######################################
