@@ -857,3 +857,75 @@ stack traceback:
 2024/03/19 15:07:22 [notice] 1#0: start worker process 1335
 2024/03/19 15:07:26 [notice] 1328#0: *3 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
 2024/03/19 15:07:26 [notice] 1328#0: *3 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/19 15:55:59 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: Database needs bootstrapping or is older than Kong 1.0.
+
+To start a new installation from scratch, run 'kong migrations bootstrap'.
+
+To migrate from a version older than 1.0, migrated to Kong 1.5.0 first. 
+If you still have 'apis' entities, you can convert them to Routes and Services
+using the 'kong migrations migrate-apis' command in Kong 1.5.0.
+
+
+stack traceback:
+	[C]: in function 'error'
+	/usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: in function 'check_state'
+	/usr/local/share/lua/5.1/kong/init.lua:663: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/19 15:56:02 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: Database needs bootstrapping or is older than Kong 1.0.
+
+To start a new installation from scratch, run 'kong migrations bootstrap'.
+
+To migrate from a version older than 1.0, migrated to Kong 1.5.0 first. 
+If you still have 'apis' entities, you can convert them to Routes and Services
+using the 'kong migrations migrate-apis' command in Kong 1.5.0.
+
+
+stack traceback:
+	[C]: in function 'error'
+	/usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:16: in function 'check_state'
+	/usr/local/share/lua/5.1/kong/init.lua:663: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/19 15:56:05 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:20: New migrations available; run 'kong migrations up' to proceed
+stack traceback:
+	[C]: in function 'error'
+	/usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:20: in function 'check_state'
+	/usr/local/share/lua/5.1/kong/init.lua:663: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/19 15:56:07 [error] 1#0: init_by_lua error: /usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:20: New migrations available; run 'kong migrations up' to proceed
+stack traceback:
+	[C]: in function 'error'
+	/usr/local/share/lua/5.1/kong/cmd/utils/migrations.lua:20: in function 'check_state'
+	/usr/local/share/lua/5.1/kong/init.lua:663: in function 'init'
+	init_by_lua(nginx-kong.conf:41):3: in main chunk
+2024/03/19 15:56:10 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 367e37ee-29e4-4d58-b6e7-a4a9867f1444
+2024/03/19 15:56:10 [notice] 1#0: using the "epoll" event method
+2024/03/19 15:56:10 [notice] 1#0: openresty/1.25.3.1
+2024/03/19 15:56:10 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/19 15:56:10 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/19 15:56:10 [notice] 1#0: start worker processes
+2024/03/19 15:56:10 [notice] 1#0: start worker process 1321
+2024/03/19 15:56:10 [notice] 1#0: start worker process 1322
+2024/03/19 15:56:10 [notice] 1#0: start worker process 1323
+2024/03/19 15:56:10 [notice] 1#0: start worker process 1324
+2024/03/19 15:56:10 [notice] 1#0: start worker process 1325
+2024/03/19 15:56:10 [notice] 1#0: start worker process 1326
+2024/03/19 15:56:10 [notice] 1#0: start worker process 1327
+2024/03/19 15:56:10 [notice] 1#0: start worker process 1328
+2024/03/19 15:56:11 [notice] 1321#0: *4 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/19 15:56:11 [notice] 1321#0: *4 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*
+2024/03/19 16:02:48 [notice] 1#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: c6dcd347-4ac9-4e87-a161-a308350929e7
+2024/03/19 16:02:48 [notice] 1#0: using the "epoll" event method
+2024/03/19 16:02:48 [notice] 1#0: openresty/1.25.3.1
+2024/03/19 16:02:48 [notice] 1#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/03/19 16:02:48 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/03/19 16:02:48 [notice] 1#0: start worker processes
+2024/03/19 16:02:48 [notice] 1#0: start worker process 1321
+2024/03/19 16:02:48 [notice] 1#0: start worker process 1322
+2024/03/19 16:02:48 [notice] 1#0: start worker process 1323
+2024/03/19 16:02:48 [notice] 1#0: start worker process 1324
+2024/03/19 16:02:48 [notice] 1#0: start worker process 1325
+2024/03/19 16:02:48 [notice] 1#0: start worker process 1326
+2024/03/19 16:02:48 [notice] 1#0: start worker process 1327
+2024/03/19 16:02:48 [notice] 1#0: start worker process 1328
+2024/03/19 16:02:49 [notice] 1321#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/03/19 16:02:49 [notice] 1321#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 0ms), context: init_worker_by_lua*

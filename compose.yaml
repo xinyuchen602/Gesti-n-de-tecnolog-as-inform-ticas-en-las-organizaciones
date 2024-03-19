@@ -139,5 +139,7 @@ services:
       - "1337:1337"
 volumes:
   mongodb:
+  kong-db:
+    driver: local
 
 
