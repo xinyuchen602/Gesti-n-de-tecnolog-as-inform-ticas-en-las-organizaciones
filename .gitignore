@@ -1,3 +1,12 @@
 kong_logs/access.log
 kong_logs/admin_access.log
 kong_logs/error.log
+
+node_modules/
+
+# 忽略本地配置文件
+.env
+
+# 忽略构建和编译生成的文件
+/build/
+/dist/

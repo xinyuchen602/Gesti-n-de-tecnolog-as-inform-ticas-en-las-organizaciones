@@ -1,6 +1,7 @@
 import { getDB } from '@/lib/mongodb';
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from "zod";
+import fs from 'fs';
 
 export const dynamic = 'force-dynamic';
 
@@ -30,6 +31,30 @@ export async function GET(_req: NextRequest) {
 // API Key
 export async function POST(req: NextRequest) {
   try {
+    const body = await req.text(); // Lee el cuerpo de la solicitud como texto
+    console.log(req);
+    // Extraer información relevante de la solicitud
+    const url = req.url.toString();
+    const method = req.method;
+    const headersObj: Record<string, string> = {};
+    req.headers.forEach((value: string, name: string) => {
+      headersObj[name] = value;
+    });
+    const headers = JSON.stringify(headersObj);
+
+    // Obtener la fecha actual
+    const fechaActual = new Date().toISOString();
+    
+    // Construir el mensaje de registro con la fecha y los datos de la solicitud
+    const mensajeConFecha = `${fechaActual}: ${method} ${url}\nHeaders: ${headers}\n`;
+
+    // Escribir en el archivo de registro
+    fs.appendFile('audit.log', mensajeConFecha, (err) => {
+      if (err) {
+        console.error('Error al registrar la solicitud:', err);
+      }
+    });
+
     let data: NewContestant = await req.json();
     data = NewContestant.parse(data);
     const db = await getDB();
