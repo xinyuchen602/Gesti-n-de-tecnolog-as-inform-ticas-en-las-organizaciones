@@ -63,7 +63,13 @@ El sistema está compuesto por varios servicios Docker administrados mediante Do
         Implementación: Se basa en la imagen de Docker pantsel/konga:0.14.9.  
         Dependencias: Conectado a la red "kong-net" y depende de servicios relacionados con Kong. 
 
+### Comunicación:
 
+La comunicación entre microservicios se establece a través de una red personalizada definida en el archivo de configuración de Docker Compose. En nuestro caso, esta red personalizada se denomina kong-net. Cada servicio definido en el archivo de Docker Compose se asigna a esta red utilizando la propiedad networks. Por ejemplo, los servicios web, db, kong-database, kong-migration, kong, konga-prepare y konga están todos configurados para formar parte de la red kong-net.  
+    
+Esta configuración permite que los contenedores de cada servicio se comuniquen entre sí a través de la red kong-net. La comunicación entre los servicios puede ser bidireccional, lo que significa que los contenedores pueden enviar solicitudes y recibir respuestas entre sí como si estuvieran en la misma red local, independientemente de en qué host estén ejecutándose los contenedores.  
+  
+Además de la comunicación a través de la red, algunos servicios también comparten volúmenes para el almacenamiento persistente de datos. Por ejemplo, el servicio db tiene configurados volúmenes para almacenar datos persistentes de MongoDB. Esto garantiza que los datos de la base de datos MongoDB persistan incluso si el contenedor se reinicia o se detiene.
 
 ### Redes:
 
@@ -140,5 +146,5 @@ Gracias a los dos ficheros se consigue que el despliegue del sistema sea muy fac
 
 La aplicación se puede ejecutar mediante un comando específico (docker compose up) que inicia el despliegue del sistema en su entorno local. Este proceso se lleva a cabo de manera automatizada y garantiza la consistencia del entorno de prueba con el sistema en producción.  
   
-Una vez desplegado el sistema, los usuarios tienen la opción de emitir su voto a favor de uno de los dos concursantes disponibles, así como de acceder a la información detallada sobre cada uno de ellos.
+Una vez que el sistema está desplegado, los usuarios tienen la capacidad de emitir votos a favor de cualquiera de los dos concursantes disponibles y también pueden acceder a información detallada sobre cada uno de ellos. Estas funciones están abiertas para todos los usuarios. Por otro lado, mediante el uso de una API key, se habilita la opción de añadir nuevos participantes al concurso y obtener información sobre los votos emitidos para cada concursante. Este mecanismo de autenticación permite el acceso a funcionalidades adicionales y privilegiadas dentro del sistema.
 
