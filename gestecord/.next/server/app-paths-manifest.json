@@ -1,0 +1,7 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/page": "app/page.js",
+  "/api/votes/route": "app/api/votes/route.js",
+  "/api/votes/[id]/route": "app/api/votes/[id]/route.js",
+  "/api/contestants/route": "app/api/contestants/route.js"
+}
