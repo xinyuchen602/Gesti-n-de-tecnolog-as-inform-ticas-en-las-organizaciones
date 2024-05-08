@@ -1,4 +1,4 @@
-networks:
+networks:    
     kong-net:
       
 services:
@@ -12,19 +12,6 @@ services:
           - web
     # volumes:
     #   - ./audit.log:/tmp/web/audit.log
-  db:
-    image: mongo:7.0.5-jammy
-    command: --quiet
-    ports:
-      - 27017:27017
-    environment:
-      - MONGO_INITDB_DATABASE=gestecord
-      - MONGO_INITDB_ROOT_USERNAME=admin
-      - MONGO_INITDB_ROOT_PASSWORD=admin
-    volumes:
-      - mongodb:/data/db
-    networks:
-      - kong-net
 
 
   #######################################
@@ -60,25 +47,26 @@ services:
   #######################################
   # Kong database migration
   #######################################
-  kong-migration:
-    image: kong:latest
-    command: "kong migrations bootstrap"
-    networks:
-      - kong-net
-    restart: on-failure
-    environment:
-      - KONG_DATABASE=postgres
-      - KONG_PG_HOST=kong-database
-      - KONG_PG_DATABASE=kong
-      - KONG_PG_USER=kong
-      - KONG_PG_PASSWORD=kong
-    depends_on:
-      - kong-database
+  # kong-migration:
+  #   image: kong:latest
+  #   command: "kong migrations bootstrap"
+  #   networks:
+  #     - kong-net
+  #   restart: on-failure
+  #   environment:
+  #     - KONG_DATABASE=postgres
+  #     - KONG_PG_HOST=kong-database
+  #     - KONG_PG_DATABASE=kong
+  #     - KONG_PG_USER=kong
+  #     - KONG_PG_PASSWORD=kong
+  #   depends_on:
+  #     - kong-database
 
   #######################################
   # Kong: The API Gateway
   #######################################
   kong:
+    command: sh -c "kong migrations bootstrap &&  kong start"
     image: kong:latest
     restart: always
     networks:
@@ -90,9 +78,10 @@ services:
       KONG_PG_HOST: kong-database
       KONG_PG_PASSWORD: kong
       KONG_PG_USER: kong
-      KONG_PROXY_LISTEN: 0.0.0.0:8000
-      KONG_PROXY_LISTEN_SSL: 0.0.0.0:8443
-      KONG_ADMIN_LISTEN: 0.0.0.0:8001
+      KONG_PG_DATABASE: kong
+      KONG_PROXY_LISTEN: kong:8000
+      KONG_PROXY_LISTEN_SSL: kong:8443
+      KONG_ADMIN_LISTEN: kong:8001
       KONG_PROXY_ACCESS_LOG: /usr/local/kong/logs/proxy_access.log
       KONG_ADMIN_ACCESS_LOG: /usr/local/kong/logs/admin_access.log
       KONG_PROXY_ERROR_LOG: /usr/local/kong/logs/proxy_error.log
@@ -100,7 +89,6 @@ services:
     volumes:
       - ./kong_logs:/usr/local/kong/logs
     depends_on:
-      - kong-migration
       - kong-database
       
     healthcheck:
@@ -115,14 +103,14 @@ services:
   #######################################
   # Konga database prepare
   #######################################
-  konga-prepare:
-    image: pantsel/konga:0.14.9
-    command: "-c prepare -a postgres -u postgresql://kong:kong@kong-database:5432/konga"
-    networks:
-      - kong-net
-    restart: on-failure
-    depends_on:
-      - kong-database
+  # konga-prepare:
+  #   image: pantsel/konga:0.14.9
+  #   command: "-c prepare -a postgres -u postgresql://kong:kong@kong-database:5432/konga"
+  #   networks:
+  #     - kong-net
+  #   restart: on-failure
+  #   depends_on:
+  #     - kong-database
       
 
   #######################################
@@ -130,7 +118,8 @@ services:
   #######################################
   konga:
     image: pantsel/konga:0.14.9
-    restart: always
+    # command: "-c prepare -a postgres -u postgresql://kong:kong@kong-database:5432/konga"
+    restart: on-failure
     networks:
      - kong-net
     environment:
@@ -142,13 +131,9 @@ services:
       NODE_ENV: production
     depends_on:
       - kong
-      - konga-prepare
       - kong-database
       
     ports:
       - "1337:1337"
 volumes:
   mongodb:
-
-
-
