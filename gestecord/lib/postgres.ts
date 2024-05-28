@@ -15,7 +15,6 @@ export async function getDB() {
 // Función para inicializar la tabla contestants
 export async function initializeContestantsTable() {
   try {
-    console.log(process.env.PGHOST);
     const db = await getDB();
     // Consulta para crear la tabla contestants si no existe
     const createTableQuery = `

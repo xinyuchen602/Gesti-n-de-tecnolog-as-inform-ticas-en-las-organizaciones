@@ -1,17 +1,40 @@
 name: Workflow
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - "**"
+    tags:
+      - "**"
+  pull_request:
+    branches:
+      - main
 
 jobs:
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Not implemented
+        run: echo "Esta fase no está implementado todavia"
   build:
     runs-on: ubuntu-latest
-
+    needs:
+      - test
     steps:
-    - name: Checkout del código
-      uses: actions/checkout@v2
-
-    # - name: Install dependencies
-    #   run: npm install
-
-    # - name: Build
-    #   run: npm run build
+      - name: Checkout del código
+        uses: actions/checkout@v2
+      - name: build
+        run: docker compose up
+  # publish:
+  #   name: Publish de imagenes
+  #   runs-on: ubuntu-latest
+  #   needs:
+  #     - build
+  # deploy-prod:
+  #   name: Deploy (production env)
+  #   runs-on: ubuntu-latest
+  # deploy-dev:
+  #   name: Deploy (development env)

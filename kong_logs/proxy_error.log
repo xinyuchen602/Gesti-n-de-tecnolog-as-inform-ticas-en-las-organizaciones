@@ -1686,3 +1686,75 @@ stack traceback:
 2024/03/20 15:24:56 [notice] 1321#0: *4514 [lua] warmup.lua:46: warming up DNS entries ..., context: ngx.timer
 2024/03/20 15:25:04 [notice] 1321#0: *4514 [lua] warmup.lua:80: finished warming up DNS entries' into the cache (in 8035ms), context: ngx.timer
 2024/03/20 15:25:49 [error] 1321#0: *5170 [kong] handler.lua:56 [file-log] failed to open the file: Permission denied while logging request, client: 172.21.0.1, server: kong, request: "GET /api/votes?apikey=secret HTTP/1.1", upstream: "http://172.21.0.2:80/api/votes?apikey=secret", host: "172.18.176.1:8000", request_id: "79021855f9d14f5d6990ca1d9891ca5c"
+2024/05/12 18:29:27 [notice] 57#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 336b86c2-761b-4aaa-bf2e-a807e9b6610d
+2024/05/12 18:29:27 [notice] 57#0: using the "epoll" event method
+2024/05/12 18:29:27 [notice] 57#0: openresty/1.25.3.1
+2024/05/12 18:29:27 [notice] 57#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/05/12 18:29:27 [notice] 57#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/05/12 18:29:27 [notice] 57#0: start worker processes
+2024/05/12 18:29:27 [notice] 57#0: start worker process 71
+2024/05/12 18:29:27 [notice] 57#0: start worker process 72
+2024/05/12 18:29:27 [notice] 57#0: start worker process 73
+2024/05/12 18:29:27 [notice] 57#0: start worker process 74
+2024/05/12 18:29:27 [notice] 57#0: start worker process 75
+2024/05/12 18:29:27 [notice] 57#0: start worker process 76
+2024/05/12 18:29:27 [notice] 57#0: start worker process 77
+2024/05/12 18:29:27 [notice] 57#0: start worker process 78
+2024/05/12 18:29:28 [notice] 71#0: *3 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/05/12 18:29:28 [notice] 71#0: *3 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 84ms), context: init_worker_by_lua*
+2024/05/12 18:29:28 [notice] 71#0: *17 [lua] warmup.lua:46: warming up DNS entries ..., context: ngx.timer
+2024/05/12 18:29:36 [notice] 71#0: *17 [lua] warmup.lua:80: finished warming up DNS entries' into the cache (in 8063ms), context: ngx.timer
+2024/05/15 14:00:19 [notice] 58#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 9172f2cc-5744-4b27-97ab-0a96ecaf5cdb
+2024/05/15 14:00:19 [notice] 58#0: using the "epoll" event method
+2024/05/15 14:00:19 [notice] 58#0: openresty/1.25.3.1
+2024/05/15 14:00:19 [notice] 58#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/05/15 14:00:19 [notice] 58#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/05/15 14:00:19 [notice] 58#0: start worker processes
+2024/05/15 14:00:19 [notice] 58#0: start worker process 72
+2024/05/15 14:00:19 [notice] 58#0: start worker process 73
+2024/05/15 14:00:19 [notice] 58#0: start worker process 74
+2024/05/15 14:00:19 [notice] 58#0: start worker process 75
+2024/05/15 14:00:19 [notice] 58#0: start worker process 76
+2024/05/15 14:00:19 [notice] 58#0: start worker process 77
+2024/05/15 14:00:19 [notice] 58#0: start worker process 78
+2024/05/15 14:00:19 [notice] 58#0: start worker process 79
+2024/05/15 14:00:20 [notice] 72#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/05/15 14:00:20 [notice] 72#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 64ms), context: init_worker_by_lua*
+2024/05/15 14:00:20 [notice] 72#0: *4514 [lua] warmup.lua:46: warming up DNS entries ..., context: ngx.timer
+2024/05/15 14:00:28 [notice] 72#0: *4514 [lua] warmup.lua:80: finished warming up DNS entries' into the cache (in 8043ms), context: ngx.timer
+2024/05/21 20:17:21 [notice] 63#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: b0810452-5d4c-4c12-b386-668acf3959a4
+2024/05/21 20:17:21 [notice] 63#0: using the "epoll" event method
+2024/05/21 20:17:21 [notice] 63#0: openresty/1.25.3.1
+2024/05/21 20:17:21 [notice] 63#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/05/21 20:17:21 [notice] 63#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/05/21 20:17:21 [notice] 63#0: start worker processes
+2024/05/21 20:17:21 [notice] 63#0: start worker process 71
+2024/05/21 20:17:21 [notice] 63#0: start worker process 72
+2024/05/21 20:17:21 [notice] 63#0: start worker process 73
+2024/05/21 20:17:21 [notice] 63#0: start worker process 74
+2024/05/21 20:17:21 [notice] 63#0: start worker process 75
+2024/05/21 20:17:21 [notice] 63#0: start worker process 76
+2024/05/21 20:17:21 [notice] 63#0: start worker process 77
+2024/05/21 20:17:21 [notice] 63#0: start worker process 78
+2024/05/21 20:17:22 [notice] 71#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/05/21 20:17:22 [notice] 71#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 58ms), context: init_worker_by_lua*
+2024/05/21 20:17:22 [notice] 71#0: *4514 [lua] warmup.lua:46: warming up DNS entries ..., context: ngx.timer
+2024/05/21 20:17:30 [notice] 71#0: *4514 [lua] warmup.lua:80: finished warming up DNS entries' into the cache (in 8038ms), context: ngx.timer
+2024/05/21 21:03:26 [notice] 64#0: [lua] init.lua:776: init(): [request-debug] token for request debugging: 6ccbc23c-554c-4855-97f1-3e7e8cac11c7
+2024/05/21 21:03:26 [notice] 64#0: using the "epoll" event method
+2024/05/21 21:03:26 [notice] 64#0: openresty/1.25.3.1
+2024/05/21 21:03:26 [notice] 64#0: OS: Linux 5.15.146.1-microsoft-standard-WSL2
+2024/05/21 21:03:26 [notice] 64#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/05/21 21:03:26 [notice] 64#0: start worker processes
+2024/05/21 21:03:26 [notice] 64#0: start worker process 72
+2024/05/21 21:03:26 [notice] 64#0: start worker process 73
+2024/05/21 21:03:26 [notice] 64#0: start worker process 74
+2024/05/21 21:03:26 [notice] 64#0: start worker process 75
+2024/05/21 21:03:26 [notice] 64#0: start worker process 76
+2024/05/21 21:03:26 [notice] 64#0: start worker process 77
+2024/05/21 21:03:26 [notice] 64#0: start worker process 78
+2024/05/21 21:03:26 [notice] 64#0: start worker process 79
+2024/05/21 21:03:27 [notice] 72#0: *1 [lua] warmup.lua:113: single_dao(): Preloading 'services' into the core_cache..., context: init_worker_by_lua*
+2024/05/21 21:03:27 [notice] 72#0: *1 [lua] warmup.lua:162: single_dao(): finished preloading 'services' into the core_cache (in 88ms), context: init_worker_by_lua*
+2024/05/21 21:03:27 [notice] 72#0: *4514 [lua] warmup.lua:46: warming up DNS entries ..., context: ngx.timer
+2024/05/21 21:03:35 [notice] 72#0: *4514 [lua] warmup.lua:80: finished warming up DNS entries' into the cache (in 8034ms), context: ngx.timer
