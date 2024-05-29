@@ -247,3 +247,18 @@ La solución propuesta aprovecha varias tecnologías clave para garantizar una a
 2. **Auto Scaling Group (Grupo de Escalado Automático):** Esta funcionalidad de AWS permite definir reglas para escalar automáticamente el número de instancias de contenedores en función de métricas como la CPU, la memoria o el tráfico de red. Esto asegura que el sistema pueda adaptarse dinámicamente a picos de carga repentinos o disminuciones en la demanda, optimizando así los costos al utilizar solo los recursos necesarios en cualquier momento.
 3. **Application Load Balancer (ALB):** El ALB actúa como un punto de entrada para las solicitudes de los usuarios y distribuye el tráfico de manera inteligente entre las instancias de contenedores disponibles en el clúster ECS. Esta distribución equitativa garantiza una alta disponibilidad y rendimiento del sistema al dirigir las solicitudes de manera eficiente a las instancias que tienen capacidad para manejarlas.
 4. **Definición de Tareas (Tasks Definition):** Esta característica de ECS simplifica la configuración de los detalles específicos de cada tarea o servicio que se ejecuta en el clúster de contenedores. Permite especificar fácilmente la imagen del contenedor a utilizar, los recursos asignados (CPU y memoria), variables de entorno necesarias y la configuración de red, entre otros aspectos. Esto facilita la configuración y el despliegue de nuevas aplicaciones o servicios dentro del entorno de contenedores.
+
+## Costes
+
+Para el funcionamiento del sistema en la nube son necesarios los siguientes:
+1. Siete IPs públicas, con el coste de $0.84 al día que al mes supondria un coste de $25.55
+2. ExtendedSupport:Yr1-Yr2:PostgreSQL11, con el coste de $4.80 al día que al mes supondria un coste de $146
+3. RDS:GP2-Storage, con el coste de $0.07 al día que al mes supondria un coste de $2.13
+4. CloudWatch, con el coste de $0.02 al día que al mes supondria un coste de  $0.608
+5. Tres instancias de t2.micro, con el coste de $0.8352  al día que al mes supondria un coste de $25.404
+6. Load balancer, con el coste de $0.54 al día que al mes supondria un coste de $16.425
+7. Seis EBS de 30GiB, con el coste de $0.4734 al día que al mes supondria un coste de $14.4
+
+A parte de los gastos de contratar los recursos para sostener el sistemas tambien entran los gasto de empleados:
+1. Dos desarrolladores con un sueldo mensual de $2000 ascendiendo el coste mensual a $4000
+
